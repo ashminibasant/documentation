@@ -81,6 +81,7 @@ Later proposals and extensions are tracked in the public registry:
 | [SRIP-23-DGL](/srs/registry/SRIP-23-DGL) | Dialectical Generation Layer | Consult document header |
 | [SRIP-24-EIL](/srs/registry/SRIP-24-EIL) | Environment Interface Layer | Consult document header |
 | [SRIP-25-IEM](/srs/registry/SRIP-25-IEM) | Interaction Event Model | Consult document header |
+| [SRIP-26-MIL](/srs/registry/SRIP-26-MIL) | Memory Influence Layer | Consult document header |
 
 Deprecated or superseded entries remain traceable through the registry as part of the public historical record.
 

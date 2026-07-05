@@ -2,7 +2,7 @@
 title: SRIP Architecture Reading Order
 description: Conceptual reading-order view for Sigma Runtime Improvement Proposals across architecture stacks.
 published: true
-date: 2026-06-27T00:00:00.000Z
+date: 2026-07-05T00:00:00.000Z
 tags:
 editor: markdown
 dateCreated: 2026-05-14T00:00:00.000Z
@@ -74,9 +74,10 @@ Use this path for long-running memory, retrieval, and recall behavior:
 2. [SRIP-09-LTM](registry/SRIP-09-LTM.md) — Long-Term Memory and Structural Coherence Layer
 3. [SRIP-11-CMT](registry/SRIP-11-CMT.md) — Compression and Memory Topology
 4. [SRIP-14-RMI](registry/SRIP-14-RMI.md) — Retrieval and Memory Integration Layer
-5. [SRIP-21-EIB](registry/SRIP-21-EIB.md) — External Identity Binding and Mode Reconciliation, when retrieved or recalled material describes one external entity through conflicting observed modes
-6. [SRIP-20-ANS](registry/SRIP-20-ANS.md) — Autonomy Negotiation and Boundary Stabilization, when retrieved or recalled material applies pressure to runtime-local boundary state
-7. [SRIP-18-CSI](registry/SRIP-18-CSI.md) — Commerce Semantic Integration Layer, when commerce context must be assembled from memory and runtime state
+5. [SRIP-26-MIL](registry/SRIP-26-MIL.md) — Memory Influence Layer, when remembered or retrieved material must be evaluated before it may steer behavior
+6. [SRIP-21-EIB](registry/SRIP-21-EIB.md) — External Identity Binding and Mode Reconciliation, when retrieved or recalled material describes one external entity through conflicting observed modes
+7. [SRIP-20-ANS](registry/SRIP-20-ANS.md) — Autonomy Negotiation and Boundary Stabilization, when retrieved or recalled material applies pressure to runtime-local boundary state
+8. [SRIP-18-CSI](registry/SRIP-18-CSI.md) — Commerce Semantic Integration Layer, when commerce context must be assembled from memory and runtime state
 
 ---
 
@@ -155,11 +156,12 @@ Use this path when a runtime trajectory receives external material or may affect
 1. [SRIP-01](srip-01.md) — Canonical Runtime Loop, for trajectory continuation
 2. [SRIP-05](srip-05.md) — Interoperability Interface, for public interface boundaries
 3. [SRIP-14-RMI](registry/SRIP-14-RMI.md) — Retrieval and Memory Integration Layer, when retrieval, memory, or persistence is involved
-4. [SRIP-21-EIB](registry/SRIP-21-EIB.md) — External Identity Binding and Mode Reconciliation, when external participants, agents, sources, or referents must be bound
-5. [SRIP-20-ANS](registry/SRIP-20-ANS.md) — Autonomy Negotiation and Boundary Stabilization, when external material applies influence or authority pressure
-6. [SRIP-22-GRC](registry/SRIP-22-GRC.md) — Governance Recursion and Collusion Boundary, when authority, legitimacy, certification, or capture boundaries matter
-7. [SRIP-24-EIL](registry/SRIP-24-EIL.md) — Environment Interface Layer, for observation/effect classification and evidence-bearing contact with external reality
-8. [SRIP-25-IEM](registry/SRIP-25-IEM.md) — Interaction Event Model, for the public semantic unit of boundary-crossing contact
+4. [SRIP-26-MIL](registry/SRIP-26-MIL.md) — Memory Influence Layer, when retrieved, remembered, archived, or ledger material may influence behavior
+5. [SRIP-21-EIB](registry/SRIP-21-EIB.md) — External Identity Binding and Mode Reconciliation, when external participants, agents, sources, or referents must be bound
+6. [SRIP-20-ANS](registry/SRIP-20-ANS.md) — Autonomy Negotiation and Boundary Stabilization, when external material applies influence or authority pressure
+7. [SRIP-22-GRC](registry/SRIP-22-GRC.md) — Governance Recursion and Collusion Boundary, when authority, legitimacy, certification, or capture boundaries matter
+8. [SRIP-24-EIL](registry/SRIP-24-EIL.md) — Environment Interface Layer, for observation/effect classification and evidence-bearing contact with external reality
+9. [SRIP-25-IEM](registry/SRIP-25-IEM.md) — Interaction Event Model, for the public semantic unit of boundary-crossing contact
 
 This sequence does not imply certification or production implementation. It is a review path for public specification readers.
 

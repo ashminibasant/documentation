@@ -2,7 +2,7 @@
 title: Memory and Persistent State
 description: Public overview of memory, continuity, and persistent state in Sigma Runtime.
 published: true
-date: 2026-05-14T00:00:00.000Z
+date: 2026-07-05T00:00:00.000Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-30T04:31:02.763Z
@@ -163,13 +163,49 @@ This preserves:
 
 ---
 
-## 9. Public Evaluation Questions
+## 9. Memory Influence Governance
+
+SRIP-26 introduces a separate memory-governance question:
+
+```text
+When may remembered or retrieved material influence behavior?
+```
+
+This is different from asking whether a record exists, whether it can be
+retrieved, or whether it is preserved for audit. Publicly:
+
+- memory existence is not memory authority;
+- persistence is not currentness;
+- retrieval is evidence, not automatic behavioral control;
+- archive or ledger preservation is not unrestricted memory;
+- influence requires scope, currentness, source authority, and privacy review.
+
+This distinction matters most in long-running systems where private, old,
+archived, role-specific, or emotionally salient material can otherwise become
+too strong simply because it is available.
+
+MIL therefore separates memory handling into two stages:
+
+1. admission: whether material may become memory and where it belongs;
+2. influence: whether that memory may steer behavior in the current context.
+
+It also protects independent behavioral modes. Memory that belongs to one
+agent, channel, relationship mode, workspace, or domain should not
+automatically influence another. Cross-scope influence requires explicit
+authorization or runtime policy.
+
+---
+
+## 10. Public Evaluation Questions
 At the public level, memory quality is most usefully understood through questions such as:
 
 - Is the runtime preserving relevant continuity?
 - Is recall helping or overloading the interaction?
 - Can the system recover from degraded memory states?
 - Does persistence strengthen coherence or amplify drift?
+- Does retrieved memory have authority to influence this context?
+- Are old, archived, private, or scoped memories prevented from steering
+  unrelated behavior?
 - When perturbation is used, does it increase useful exploration without
   destabilizing identity, scope, or coherence?
 
@@ -177,9 +213,9 @@ Exact internal telemetry may evolve, but these are the durable public questions.
 
 ---
 
-## 10. Summary
+## 11. Summary
 The Sigma Runtime memory layer is best understood publicly as a structured continuity system.  
-It helps the runtime remain coherent across time, but it does so through bounded persistence, selective recall, controlled reintegration, and carefully governed perturbation rather than literal archival replay.
+It helps the runtime remain coherent across time, but it does so through bounded persistence, selective recall, controlled reintegration, memory influence governance, and carefully governed perturbation rather than literal archival replay.
 
 ---
 

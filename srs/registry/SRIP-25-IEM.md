@@ -382,21 +382,7 @@ This draft does not deprecate or supersede existing SRIPs. It refines SRIP-24 EI
 
 ---
 
-## 11. Author Checklist
-
-- [x] Normative requirements are separated from examples.
-- [x] Proprietary runtime implementation details are not disclosed.
-- [x] Certification claims are not implied.
-- [x] SRS/SRIP version dependencies are listed.
-- [x] License fields are complete.
-- [x] Public/proprietary boundary has been reviewed.
-- [x] SRD synchronization impact has been reviewed.
-- [x] Conformance level impact has been reviewed.
-- [x] Marks and certification impact has been reviewed.
-
----
-
-## 12. References
+## 11. References
 
 - [SRIP-24 EIL](SRIP-24-EIL.md)
 - [SRIP-05 Interoperability Interface](../srip-05.md)
@@ -409,7 +395,7 @@ This draft does not deprecate or supersede existing SRIPs. It refines SRIP-24 EI
 
 ---
 
-## 13. Change Log
+## 12. Change Log
 
 | Version | Date | Author | Description |
 | --- | --- | --- | --- |

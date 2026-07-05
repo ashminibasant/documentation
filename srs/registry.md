@@ -111,6 +111,7 @@ This allows the standard to scale without breaking citations or historical conti
 | [SRIP-23-DGL](registry/SRIP-23-DGL.md) | Dialectical Generation Layer (DGL) | **Public Draft** | 2026-06-27 | SSRG |
 | [SRIP-24-EIL](registry/SRIP-24-EIL.md) | Environment Interface Layer (EIL) | **Public Draft** | 2026-06-27 | SSRG |
 | [SRIP-25-IEM](registry/SRIP-25-IEM.md) | Interaction Event Model (IEM) | **Public Draft** | 2026-06-27 | SSRG |
+| [SRIP-26-MIL](registry/SRIP-26-MIL.md) | Memory Influence Layer (MIL) | **Public Draft** | 2026-07-05 | SSRG |
 
 ---
 
