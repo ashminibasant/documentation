@@ -35,13 +35,16 @@
 | Commercial Runtime Boundary | Relevant policy or explicit covenant for protected Sigma marks, official certification, managed deployment, white-label, resale, CC BY-NC commercial use, and patent commitments |
 | Information Class | Open |
 | Change Class | SRS-only |
+| Specification Class | Measurement Specification |
 | Normative Status | Defines the public drift metric vocabulary, threshold model, and stabilization behavior for foundational runtime coherence. |
 | Conformance Level | Public Draft / Foundational |
 | SRD Synchronization Action | Deferred review |
-| Release Alignment Status | Foundational draft; no production conformance claim is made by this document alone. |
+| Release Alignment Status | aligned with deferred SRD sync |
+| Release Alignment Notes | Foundational draft; no production conformance claim is made by this document alone. |
 
 > **Public Note**
-> This foundational document retains the core drift formulas and thresholds while using version-light public control language.
+> This foundational document retains the core drift formula as a reference
+> profile while using version-light public control language.
 > Earlier branded control vocabulary remains part of lineage history, not the active public baseline.
 
 ---
@@ -81,7 +84,8 @@ Each drift type contributes to the **Composite Drift Index (DI)** used in stabil
 
 ## 4 · Drift Index Model
 
-The **Composite Drift Index** integrates multiple metrics with adaptive weighting:
+The following **Composite Drift Index** is the foundational equal-weight
+reference profile:
 
 \[
 DI_t = \frac{SDI_t + SV_t + PD_t}{3 \cdot SCR_t}
@@ -93,7 +97,21 @@ Where:
 - **PDₜ** — control-posture drift from runtime control telemetry,
 - **SCRₜ** — semantic compression ratio (stabilizing denominator).
 
-A runtime is considered *nominally stable* when **DI < 0.45**.
+The formula is valid only when all inputs use the same causally ordered window,
+each numerator component is normalized under a declared profile, and
+`SCR_t > 0`. Missing components, incompatible windows, invalid normalization,
+or an invalid denominator produce `unverified`; implementations must not
+zero-fill them.
+
+This formula does not implement adaptive weighting. An implementation using
+adaptive weights must publish a separate versioned calibration profile and must
+not identify its output as the equal-weight reference profile.
+
+Under this reference profile, a runtime is considered *nominally stable* when
+**DI < 0.45**. Thresholds in this document are not implementation-neutral unless
+the observation is bound to a compatible calibration profile and evidence ref.
+Canonical metric identities and validity rules are defined in the
+[SRS Metric Registry](metric-registry.md).
 
 ---
 
@@ -204,11 +222,15 @@ Drift management integrates with:
 
 ## 10 · Conformance Requirements
 A runtime conforms to SRIP-03 if it:
-1. Computes **DI** per cycle according to § 4.
+1. Computes **DI** per cycle according to § 4 when claiming the foundational
+   equal-weight profile, or publishes a distinct versioned profile for an
+   alternative computation.
 2. Implements at least three stabilization methods (§ 7.2).
 3. Applies deterministic control transitions per § 6.
 4. Enforces boundary conditions (§ 8).
 5. Integrates with runtime control and foundational safety telemetry channels.
+6. Publishes metric IDs, window, validity, calibration profile, and evidence
+   references according to the SRS Metric Registry.
 
 ---
 

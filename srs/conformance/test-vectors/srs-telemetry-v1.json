@@ -1,0 +1,313 @@
+{
+  "contract_version": "srs_telemetry_test_vectors_v1",
+  "license": "Apache-2.0",
+  "information_class": "Open",
+  "cases": [
+    {
+      "name": "valid_profile_bound_metric",
+      "expected_schema_valid": true,
+      "envelope": {
+        "schema_version": "srs-telemetry-v1",
+        "projection_contract": "srs_telemetry_projection_v1",
+        "action_authority": "none",
+        "producer": {
+          "implementation_id": "conformance-fixture",
+          "implementation_version": "1.0.0",
+          "source_revision_ref": "git:sha1:1111111111111111111111111111111111111111"
+        },
+        "observation": {
+          "observation_ref": "observation:fixture:valid",
+          "scope": "runtime_cycle",
+          "sequence": 1
+        },
+        "metrics": [
+          {
+            "metric_id": "srip10.semantic_drift_coefficient.v1",
+            "symbol": "SDC",
+            "value_type": "scalar",
+            "value": 0.14,
+            "unit": "ratio",
+            "validity": "valid",
+            "validity_reasons": [],
+            "source_contract_ref": "aep_metrics_v1",
+            "source_field": "sdc",
+            "calibration_profile_ref": "profile:fixture:aep-v1",
+            "evidence_ref": "evidence:fixture:aep-v1"
+          }
+        ]
+      }
+    },
+    {
+      "name": "degraded_metric_retains_measured_value",
+      "expected_schema_valid": true,
+      "envelope": {
+        "schema_version": "srs-telemetry-v1",
+        "projection_contract": "srs_telemetry_projection_v1",
+        "action_authority": "none",
+        "producer": {
+          "implementation_id": "conformance-fixture",
+          "implementation_version": "1.0.0",
+          "source_revision_ref": "content:sha256:2222222222222222222222222222222222222222222222222222222222222222"
+        },
+        "observation": {
+          "observation_ref": "observation:fixture:degraded",
+          "scope": "runtime_cycle",
+          "sequence": 2
+        },
+        "metrics": [
+          {
+            "metric_id": "srs.symbolic_density.v1",
+            "symbol": "SD",
+            "value_type": "scalar",
+            "value": 0.48,
+            "unit": "ratio",
+            "validity": "degraded",
+            "validity_reasons": ["calibration_missing"],
+            "source_contract_ref": "alice_state_v1",
+            "source_field": "symbolic_density",
+            "calibration_profile_ref": null,
+            "evidence_ref": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "unverified_metric_never_zero_fills",
+      "expected_schema_valid": true,
+      "envelope": {
+        "schema_version": "srs-telemetry-v1",
+        "projection_contract": "srs_telemetry_projection_v1",
+        "action_authority": "none",
+        "producer": {
+          "implementation_id": "conformance-fixture",
+          "implementation_version": "1.0.0",
+          "source_revision_ref": "release:fixture-3"
+        },
+        "observation": {
+          "observation_ref": "observation:fixture:unverified",
+          "scope": "runtime_cycle",
+          "sequence": 3
+        },
+        "metrics": [
+          {
+            "metric_id": "srs.composite_drift_index.v1",
+            "symbol": "DI",
+            "value_type": "scalar",
+            "value": null,
+            "unit": "profile_normalized",
+            "validity": "unverified",
+            "validity_reasons": ["formula_incompatible"],
+            "source_contract_ref": "drift_metrics_v095",
+            "source_field": "total",
+            "calibration_profile_ref": null,
+            "evidence_ref": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "invalid_value_type_value_mismatch",
+      "expected_schema_valid": false,
+      "envelope": {
+        "schema_version": "srs-telemetry-v1",
+        "projection_contract": "srs_telemetry_projection_v1",
+        "action_authority": "none",
+        "producer": {
+          "implementation_id": "conformance-fixture",
+          "implementation_version": "1.0.0",
+          "source_revision_ref": "release:invalid-type"
+        },
+        "observation": {
+          "observation_ref": "observation:fixture:invalid-type",
+          "scope": "runtime_cycle",
+          "sequence": 4
+        },
+        "metrics": [
+          {
+            "metric_id": "srs.symbolic_density.v1",
+            "symbol": "SD",
+            "value_type": "boolean",
+            "value": "not-a-boolean",
+            "unit": "boolean",
+            "validity": "valid",
+            "validity_reasons": [],
+            "source_contract_ref": "fixture_contract_v1",
+            "source_field": "enabled",
+            "calibration_profile_ref": "profile:fixture:boolean-v1",
+            "evidence_ref": "evidence:fixture:boolean-v1"
+          }
+        ]
+      }
+    },
+    {
+      "name": "invalid_degraded_without_reason",
+      "expected_schema_valid": false,
+      "envelope": {
+        "schema_version": "srs-telemetry-v1",
+        "projection_contract": "srs_telemetry_projection_v1",
+        "action_authority": "none",
+        "producer": {
+          "implementation_id": "conformance-fixture",
+          "implementation_version": "1.0.0",
+          "source_revision_ref": "release:invalid-degraded-reason"
+        },
+        "observation": {
+          "observation_ref": "observation:fixture:invalid-degraded-reason",
+          "scope": "runtime_cycle",
+          "sequence": 5
+        },
+        "metrics": [
+          {
+            "metric_id": "srs.symbolic_density.v1",
+            "symbol": "SD",
+            "value_type": "scalar",
+            "value": 0.48,
+            "unit": "ratio",
+            "validity": "degraded",
+            "validity_reasons": [],
+            "source_contract_ref": "alice_state_v1",
+            "source_field": "symbolic_density",
+            "calibration_profile_ref": null,
+            "evidence_ref": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "invalid_unverified_without_reason",
+      "expected_schema_valid": false,
+      "envelope": {
+        "schema_version": "srs-telemetry-v1",
+        "projection_contract": "srs_telemetry_projection_v1",
+        "action_authority": "none",
+        "producer": {
+          "implementation_id": "conformance-fixture",
+          "implementation_version": "1.0.0",
+          "source_revision_ref": "release:invalid-unverified-reason"
+        },
+        "observation": {
+          "observation_ref": "observation:fixture:invalid-unverified-reason",
+          "scope": "runtime_cycle",
+          "sequence": 6
+        },
+        "metrics": [
+          {
+            "metric_id": "srs.composite_drift_index.v1",
+            "symbol": "DI",
+            "value_type": "scalar",
+            "value": null,
+            "unit": "profile_normalized",
+            "validity": "unverified",
+            "validity_reasons": [],
+            "source_contract_ref": null,
+            "source_field": null,
+            "calibration_profile_ref": null,
+            "evidence_ref": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "invalid_unverified_with_value",
+      "expected_schema_valid": false,
+      "envelope": {
+        "schema_version": "srs-telemetry-v1",
+        "projection_contract": "srs_telemetry_projection_v1",
+        "action_authority": "none",
+        "producer": {
+          "implementation_id": "conformance-fixture",
+          "implementation_version": "1.0.0",
+          "source_revision_ref": "release:invalid-unverified-value"
+        },
+        "observation": {
+          "observation_ref": "observation:fixture:invalid-unverified-value",
+          "scope": "runtime_cycle",
+          "sequence": 7
+        },
+        "metrics": [
+          {
+            "metric_id": "srs.composite_drift_index.v1",
+            "symbol": "DI",
+            "value_type": "scalar",
+            "value": 0,
+            "unit": "profile_normalized",
+            "validity": "unverified",
+            "validity_reasons": ["formula_incompatible"],
+            "source_contract_ref": null,
+            "source_field": null,
+            "calibration_profile_ref": null,
+            "evidence_ref": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "invalid_source_revision_ref",
+      "expected_schema_valid": false,
+      "envelope": {
+        "schema_version": "srs-telemetry-v1",
+        "projection_contract": "srs_telemetry_projection_v1",
+        "action_authority": "none",
+        "producer": {
+          "implementation_id": "conformance-fixture",
+          "implementation_version": "1.0.0",
+          "source_revision_ref": "mutable revision"
+        },
+        "observation": {
+          "observation_ref": "observation:fixture:invalid-revision",
+          "scope": "runtime_cycle",
+          "sequence": 8
+        },
+        "metrics": [
+          {
+            "metric_id": "srs.symbolic_density.v1",
+            "symbol": "SD",
+            "value_type": "scalar",
+            "value": 0.48,
+            "unit": "ratio",
+            "validity": "valid",
+            "validity_reasons": [],
+            "source_contract_ref": "alice_state_v1",
+            "source_field": "symbolic_density",
+            "calibration_profile_ref": "profile:fixture:density-v1",
+            "evidence_ref": "evidence:fixture:density-v1"
+          }
+        ]
+      }
+    },
+    {
+      "name": "invalid_valid_without_calibration_or_evidence",
+      "expected_schema_valid": false,
+      "envelope": {
+        "schema_version": "srs-telemetry-v1",
+        "projection_contract": "srs_telemetry_projection_v1",
+        "action_authority": "none",
+        "producer": {
+          "implementation_id": "conformance-fixture",
+          "implementation_version": "1.0.0",
+          "source_revision_ref": "release:invalid-valid-authority"
+        },
+        "observation": {
+          "observation_ref": "observation:fixture:invalid-valid-authority",
+          "scope": "runtime_cycle",
+          "sequence": 9
+        },
+        "metrics": [
+          {
+            "metric_id": "srs.symbolic_density.v1",
+            "symbol": "SD",
+            "value_type": "scalar",
+            "value": 0.48,
+            "unit": "ratio",
+            "validity": "valid",
+            "validity_reasons": [],
+            "source_contract_ref": "alice_state_v1",
+            "source_field": "symbolic_density",
+            "calibration_profile_ref": null,
+            "evidence_ref": null
+          }
+        ]
+      }
+    }
+  ]
+}

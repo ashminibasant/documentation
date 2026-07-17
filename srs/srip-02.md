@@ -35,10 +35,12 @@
 | Commercial Runtime Boundary | Relevant policy or explicit covenant for protected Sigma marks, official certification, managed deployment, white-label, resale, CC BY-NC commercial use, and patent commitments |
 | Information Class | Open |
 | Change Class | SRS-only |
+| Specification Class | Foundational Specification |
 | Normative Status | Defines the public attractor state model and metadata vocabulary for interoperable attractor representation. |
 | Conformance Level | Public Draft / Foundational |
 | SRD Synchronization Action | Deferred review |
-| Release Alignment Status | Foundational draft; no production conformance claim is made by this document alone. |
+| Release Alignment Status | aligned with deferred SRD sync |
+| Release Alignment Notes | Foundational draft; no production conformance claim is made by this document alone. |
 
 > **Public Note:**
 > This foundational document uses version-light public vocabulary for attractor lifecycle, telemetry, and recovery semantics.
@@ -92,7 +94,7 @@ Attractor:
   phase_stability_delta: Float  # PSD = |PSIₜ - PSIₑₓₚ|
   phase_shift_delta: Float      # PSΔ: temporal drift of phase alignment
   phase_alignment: Float        # PCI: phase coherence ratio
-  density: Float                # SDI: symbolic density
+  density: Float                # SD: symbolic density
   drift_index: Float            # DI: semantic drift
   lifecycle_state: String       # forming|stable|reflective|recovery|fragmenting
   created_at: ISO8601
@@ -129,9 +131,20 @@ During *Recovery*, volatile deltas are cleared, and the attractor restores struc
 3. When **DI ≥ 0.6**, the runtime enforces *Recovery* and temporarily suspends recursion.
 4. Attractors sharing ≥ 60 % motif overlap must undergo merge evaluation to prevent redundancy.
 5. Dissolution must preserve **PIL invariants** and the **causal continuity chain (CCC)**.
-6. Each runtime cycle must record attractor telemetry (PSI, PSD, SDI, DI) to the **Attractor Registry** or an equivalent attractor ledger.
+6. Each runtime cycle must record attractor telemetry (PSI, PSD, SD, DI) to the **Attractor Registry** or an equivalent attractor ledger.
 
 These thresholds align with unified drift limits defined in **SRIP-03** (Drift Metrics) and **SRIP-05** (Interoperability Safety).
+
+### 6.1 Metric Identity And Migration
+
+The canonical [SRS Metric Registry](metric-registry.md) reserves `SDI` for the
+Semantic Drift Index defined by SRIP-03. Symbolic density uses `SD`.
+
+New telemetry producers must emit stable metric identifiers under
+`srs-telemetry-v1`. Historical SRIP-02 records that used `SDI` for symbolic
+density may be projected to `SD` only when field or schema provenance proves
+that meaning. Symbol-only legacy `SDI` without provenance is ambiguous and must
+be exposed as `unverified`, not guessed.
 
 ---
 
@@ -151,7 +164,9 @@ A runtime conforms to SRIP-02 if it:
 - Tracks lifecycle transitions per § 5.
 - Exposes attractor telemetry via Field API.
 - Enforces stability and drift thresholds per § 6.
-- Logs PSI/PSD/DI data every cycle for diagnostic reproducibility.
+- Logs PSI/PSD/SD/DI data every cycle for diagnostic reproducibility.
+- Publishes metric IDs, schema version, validity, and calibration profile refs
+  according to the SRS Metric Registry.
 
 ---
 

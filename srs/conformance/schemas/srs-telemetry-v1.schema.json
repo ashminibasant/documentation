@@ -1,0 +1,174 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sigmastratum.org/srs/conformance/schemas/srs-telemetry-v1.schema.json",
+  "title": "SRS Telemetry Projection v1",
+  "license": "Apache-2.0",
+  "information_class": "Open",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "projection_contract",
+    "action_authority",
+    "producer",
+    "observation",
+    "metrics"
+  ],
+  "properties": {
+    "schema_version": {"const": "srs-telemetry-v1"},
+    "projection_contract": {"const": "srs_telemetry_projection_v1"},
+    "action_authority": {"const": "none"},
+    "producer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["implementation_id", "implementation_version", "source_revision_ref"],
+      "properties": {
+        "implementation_id": {"type": "string", "minLength": 1},
+        "implementation_version": {"type": "string", "minLength": 1},
+        "source_revision_ref": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 512,
+          "pattern": "^[a-z][a-z0-9+.-]*:[^\\s]+$"
+        }
+      }
+    },
+    "observation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["observation_ref", "scope", "sequence"],
+      "properties": {
+        "observation_ref": {"type": "string", "minLength": 1},
+        "scope": {
+          "enum": ["runtime_cycle", "message", "checkpoint", "evidence_packet"]
+        },
+        "sequence": {"type": "integer", "minimum": 0}
+      }
+    },
+    "metrics": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/metric"}
+    }
+  },
+  "$defs": {
+    "metric": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "metric_id",
+        "symbol",
+        "value_type",
+        "value",
+        "unit",
+        "validity",
+        "validity_reasons",
+        "source_contract_ref",
+        "source_field",
+        "calibration_profile_ref",
+        "evidence_ref"
+      ],
+      "properties": {
+        "metric_id": {
+          "type": "string",
+          "pattern": "^(srs|srip[0-9]+)\\.[a-z0-9_]+\\.v[0-9]+$"
+        },
+        "symbol": {"type": "string", "minLength": 1},
+        "value_type": {"enum": ["scalar", "integer", "category", "boolean"]},
+        "value": {"type": ["number", "integer", "string", "boolean", "null"]},
+        "unit": {"type": "string", "minLength": 1},
+        "validity": {"enum": ["valid", "degraded", "unverified"]},
+        "validity_reasons": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "source_missing",
+              "source_invalid",
+              "profile_missing",
+              "profile_incompatible",
+              "calibration_missing",
+              "evidence_missing",
+              "ambiguous_legacy_symbol",
+              "formula_incompatible",
+              "not_implemented",
+              "out_of_domain",
+              "hydration_degraded"
+            ]
+          }
+        },
+        "source_contract_ref": {"type": ["string", "null"]},
+        "source_field": {"type": ["string", "null"]},
+        "calibration_profile_ref": {"type": ["string", "null"]},
+        "evidence_ref": {"type": ["string", "null"]}
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"validity": {"const": "unverified"}}},
+          "then": {
+            "properties": {
+              "value": {"type": "null"},
+              "validity_reasons": {"minItems": 1}
+            }
+          }
+        },
+        {
+          "if": {"properties": {"validity": {"const": "degraded"}}},
+          "then": {
+            "properties": {
+              "validity_reasons": {"minItems": 1}
+            }
+          }
+        },
+        {
+          "if": {"properties": {"validity": {"const": "valid"}}},
+          "then": {
+            "properties": {
+              "source_contract_ref": {"type": "string", "minLength": 1},
+              "source_field": {"type": "string", "minLength": 1},
+              "calibration_profile_ref": {"type": "string", "minLength": 1},
+              "evidence_ref": {"type": "string", "minLength": 1},
+              "validity_reasons": {"maxItems": 0}
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "validity": {"enum": ["valid", "degraded"]},
+              "value_type": {"const": "scalar"}
+            }
+          },
+          "then": {"properties": {"value": {"type": "number"}}}
+        },
+        {
+          "if": {
+            "properties": {
+              "validity": {"enum": ["valid", "degraded"]},
+              "value_type": {"const": "integer"}
+            }
+          },
+          "then": {"properties": {"value": {"type": "integer"}}}
+        },
+        {
+          "if": {
+            "properties": {
+              "validity": {"enum": ["valid", "degraded"]},
+              "value_type": {"const": "category"}
+            }
+          },
+          "then": {"properties": {"value": {"type": "string"}}}
+        },
+        {
+          "if": {
+            "properties": {
+              "validity": {"enum": ["valid", "degraded"]},
+              "value_type": {"const": "boolean"}
+            }
+          },
+          "then": {"properties": {"value": {"type": "boolean"}}}
+        }
+      ]
+    }
+  }
+}
