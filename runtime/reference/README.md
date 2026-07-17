@@ -8,6 +8,12 @@ editor: markdown
 dateCreated: 2025-12-01T10:46:22.001Z
 ---
 
+> **Sigma Stratum Historical Research Artifact - License Notice**
+>
+> This document is licensed under Creative Commons
+> Attribution-NonCommercial 4.0 International (`CC BY-NC 4.0`). Referenced
+> software and data with explicit terms retain those terms.
+
 # Sigma Runtime – Reference Implementations (RI & ERI)
 
 The **Sigma Runtime** defines the *Recursive Control Loop (RCL)* and its  

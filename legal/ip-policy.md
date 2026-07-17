@@ -8,6 +8,12 @@ editor: markdown
 dateCreated: 2025-11-30T04:56:05.346Z
 ---
 
+> **Sigma Stratum Public Policy - License Notice**
+>
+> This policy document is licensed under Creative Commons Attribution 4.0
+> International (`CC BY 4.0`). This document license does not grant rights to
+> Sigma marks, certification, patents, or proprietary runtime assets.
+
 # IP Policy
 
 This page is an IP policy overview. The active policy layer is maintained at [Sigma Stratum Intellectual Property, Licensing, and Certification Policy](/legal/ip-licensing-certification-policy).

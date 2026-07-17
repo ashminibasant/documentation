@@ -8,6 +8,12 @@ editor: markdown
 dateCreated: 2025-12-04T03:35:16.267Z
 ---
 
+> **Sigma Stratum Historical Research Artifact - License Notice**
+>
+> This document is licensed under Creative Commons
+> Attribution-NonCommercial 4.0 International (`CC BY-NC 4.0`). Referenced
+> software and data with explicit terms retain those terms.
+
 # SIGMA Runtime Benchmark Plan (v0.1 ERI)
 
 ## Goal
@@ -165,4 +171,3 @@ Include reference to
 [`SIGMA Runtime ERI v0.1`](https://github.com/sigmastratum/documentation/blob/main/runtime/reference/README.md)
 
 ---
-

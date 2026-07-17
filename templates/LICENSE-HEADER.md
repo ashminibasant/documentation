@@ -8,6 +8,12 @@ editor: markdown
 dateCreated: 2025-11-30T22:17:46.138Z
 ---
 
+> **Sigma Runtime Standard - Public Specification Notice**
+>
+> This template document is licensed under Creative Commons Attribution 4.0
+> International (`CC BY 4.0`). It does not alter the license selected for a
+> document that uses one of the templates below.
+
 # License Header Templates
 
 Use these blocks as source text for document-level license headers. The license stated in each published document remains authoritative.

@@ -8,6 +8,11 @@ editor: markdown
 dateCreated: 2025-12-01T07:34:03.356Z
 ---
 
+> **Sigma Stratum Documentation - License Notice**
+>
+> This document is licensed under Creative Commons
+> Attribution-NonCommercial 4.0 International (`CC BY-NC 4.0`).
+
 # Sigma Stratum Documentation  
 
 Public technical documentation, standards, and research corpus for the **Sigma Stratum** framework and the **Sigma Runtime** architecture.

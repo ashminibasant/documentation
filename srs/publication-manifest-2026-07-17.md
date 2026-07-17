@@ -37,7 +37,7 @@ bindings, prompts, or secrets.
 ## Logical Commit Inventory
 
 The commit refs below are the immutable exact file inventories for the first
-three package components. The evidence/licensing component contains this
+four package components. The repository-wide license closure updates this
 manifest and therefore receives its commit ref only in the owner handoff after
 commit creation.
 
@@ -46,7 +46,8 @@ commit creation.
 | 1 | `7576d03` | 8 | Metric registry, telemetry v1 schema/projection/vectors, drift and telemetry profiles, SRIP-02/03 synchronization | SRS prose `CC BY 4.0`; explicitly marked machine-readable artifacts `Apache-2.0` |
 | 2 | `ae4d877` | 32 | Specification classes, SMC canonical boundary/reference profiles, SRIP normalization, ADP/RSM hardening | Explicit per-file public SRS or documentation notice |
 | 3 | `8984c97` | 22 | SRIP-27 TMC, SRIP-28 TAL, registry/reading-order, SRD and governance synchronization | Explicit per-file `CC BY 4.0` or `CC BY-NC 4.0` notice |
-| 4 | Pending in this worktree | 20 | Open historical evidence licensing, conformance navigation, evidence matrix, integrity correction, license backlog, and publication manifests | Explicit per-file notice or immutable package manifest authority |
+| 4 | `4b44ed6` | 20 | Open historical evidence licensing, conformance navigation, evidence matrix, integrity correction, license audit record, and publication manifests | Explicit per-file notice or immutable package manifest authority |
+| 5 | Pending in this worktree | 48 | Repository-wide explicit Markdown license closure and affected inventory hashes | Public policy/template text `CC BY 4.0`; documentation and historical/reference research `CC BY-NC 4.0` |
 
 ## Component File And License Inventory
 
@@ -105,6 +106,22 @@ The three evidence inventories cover 60 historical artifacts by path and SHA-256
 An explicit existing per-file license always takes precedence over a package
 default. Raw JSON, PDF, image, and dialogue-derived artifacts remain unchanged.
 
+### Repository-Wide License Closure
+
+The fifth component adds explicit top-of-document license notices to 43
+Markdown documents. Five were already package-inventoried but lacked a
+qualifying top notice: four relied only on the package default, while
+`PTR-500.md` also carried a compatible footer license. Their two affected hash
+inventories are refreshed. Together with the audit/publication records, the
+component contains 48 files.
+
+The strict final inventory is:
+
+- 130 Markdown files audited;
+- 130 explicit per-document license authorities;
+- 0 Markdown files relying only on package defaults;
+- 0 open license-remediation items.
+
 ## Validation Record
 
 The package is publication-ready only when all of the following remain true at
@@ -117,7 +134,7 @@ the final commit:
 - the public tree contains no proprietary information-class declaration for
   these three historical evidence packages;
 - no deleted checker or GitHub Actions workflow is referenced;
-- changed and new files have explicit license authority;
+- all 130 Markdown files have explicit per-document license authority;
 - no private filesystem path, session/agent identifier, prompt, or secret is
   introduced by this publication diff;
 - `git diff --check` passes;
@@ -138,13 +155,13 @@ estimator, and reproducible verdict are available. `specified`, `implemented`,
 `tested`, and `benchmarked` are independent evidence states and are not inferred
 from one another.
 
-## Remaining License Work
+## License Closure
 
-The bounded repository-wide debt is recorded in
+The completed repository-wide audit is recorded in
 [`team/repository-license-remediation-backlog.md`](../team/repository-license-remediation-backlog.md).
-It identifies 27 unchanged Markdown files that still require explicit
-content-owner license authority. That debt is not silently relicensed by this
-package and does not leave any new or modified publication file unclassified.
+The initial 27-file lexical backlog was superseded by a stricter authority
+audit, and all resulting items are resolved. There is no remaining known
+Markdown license-authority debt in the current tree.
 
 ## Owner Gate
 

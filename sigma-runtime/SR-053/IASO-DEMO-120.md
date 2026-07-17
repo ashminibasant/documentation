@@ -1,3 +1,9 @@
+> **Sigma Stratum Historical Research Artifact - License Notice**
+>
+> This document is licensed under Creative Commons
+> Attribution-NonCommercial 4.0 International (`CC BY-NC 4.0`). Referenced
+> software and data with explicit terms retain those terms.
+
 # IASO-DEMO-120 — Medical AI Demonstration Test
 **Purpose:** Comprehensive demonstration of Iaso's capabilities — identity consistency, memory, empathy, boundaries, and clinical knowledge integration.
 **Structure:** 8 thematic blocks × 15 cycles each = 120 cycles

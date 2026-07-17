@@ -8,6 +8,11 @@ editor: markdown
 dateCreated: 2025-11-30T04:53:26.637Z
 ---
 
+> **Sigma Stratum Documentation - License Notice**
+>
+> This document is licensed under Creative Commons
+> Attribution-NonCommercial 4.0 International (`CC BY-NC 4.0`).
+
 # Roadmap
 
 The Sigma Runtime roadmap outlines upcoming work across specifications,

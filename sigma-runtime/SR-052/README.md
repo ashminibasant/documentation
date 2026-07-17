@@ -1,3 +1,9 @@
+> **Sigma Stratum Historical Research Artifact - License Notice**
+>
+> This document is licensed under Creative Commons
+> Attribution-NonCommercial 4.0 International (`CC BY-NC 4.0`). Referenced
+> software and data with explicit terms retain those terms.
+
 # SR-052: PTR-500 AEP Validation (v3)
 
 This folder contains the finalized PTR-500 AEP validation report and the

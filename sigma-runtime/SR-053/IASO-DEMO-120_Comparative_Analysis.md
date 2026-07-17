@@ -1,3 +1,9 @@
+> **Sigma Stratum Historical Research Artifact - License Notice**
+>
+> This document is licensed under Creative Commons
+> Attribution-NonCommercial 4.0 International (`CC BY-NC 4.0`). Referenced
+> software and data with explicit terms retain those terms.
+
 # SIGMA Runtime — IASO-DEMO-120 Comparative Analysis
 **Date:** 2026-02-05 (Final)
 **Version:** SR v0.5.3 (SRIP-11 CMT + SRIP-10h/10i Anti-Crystallization)

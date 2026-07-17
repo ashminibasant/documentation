@@ -1,3 +1,9 @@
+> **Sigma Stratum Historical Research Artifact - License Notice**
+>
+> This document is licensed under Creative Commons
+> Attribution-NonCommercial 4.0 International (`CC BY-NC 4.0`). Referenced
+> software and data with explicit terms retain those terms.
+
 # SIGMA Runtime v0.4.6 — 110-CYCLE COGNITIVE ARCHITECTURE VALIDATION REPORT
 
 **Date:** 2025-12-26  
@@ -974,4 +980,3 @@ Attractor-based cognitive architectures can achieve:
 ---
 
 **END OF SCIENTIFIC REPORT**
-

@@ -1,3 +1,9 @@
+> **Sigma Stratum Historical Research Artifact - License Notice**
+>
+> This document is licensed under Creative Commons
+> Attribution-NonCommercial 4.0 International (`CC BY-NC 4.0`). Referenced
+> software and data with explicit terms retain those terms.
+
 # Benchmark Report: SIGMA Runtime (v0.1 ERI) vs. Baseline Agent
 
 ## Abstract

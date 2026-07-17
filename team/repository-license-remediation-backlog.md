@@ -1,6 +1,6 @@
 ---
-title: Repository License Authority Remediation Backlog
-description: Bounded backlog for unchanged public documentation files that do not yet state an explicit per-document license authority.
+title: Repository License Authority Remediation Record
+description: Completed audit record for explicit per-document license authority across the public documentation repository.
 published: true
 date: 2026-07-17T00:00:00.000Z
 tags:
@@ -10,72 +10,65 @@ dateCreated: 2026-07-17T00:00:00.000Z
 
 > **Sigma Stratum Documentation - License Notice**
 >
-> This backlog is licensed under Creative Commons
+> This audit record is licensed under Creative Commons
 > Attribution-NonCommercial 4.0 International (`CC BY-NC 4.0`).
 
-# Repository License Authority Remediation Backlog
+# Repository License Authority Remediation Record
 
-## Scope
+## Completion Status
 
-The repository-level `LICENSE` states that each document must identify its own
-license. The 2026-07-17 publication audit found the 27 unchanged Markdown files
-below without an explicit per-document license authority. They are outside the
-current publication diff and require a separate content-owner review before a
-license notice is added.
+| Field | Value |
+| --- | --- |
+| Status | `complete` |
+| Audit Date | 2026-07-17 |
+| Markdown Files Audited | 130 |
+| Explicit Per-Document Authorities | 130 |
+| Package-Only Markdown Authorities | 0 |
+| Open Remediation Items | 0 |
+| Push Status | Not pushed |
 
-This backlog does not assign, infer, or change the license of a listed file.
-Directory context, copyright text, or a license applied to a different artifact
-is not treated as a substitute for an explicit authority on the file itself.
+The repository-level `LICENSE` requires each document to identify its own
+license. The initial lexical audit found 27 files that did not contain a license
+marker. A stricter authority audit then rejected incidental mentions of the word
+`license`, policy links, and package defaults as substitutes for a document's
+own notice.
 
-The historical evidence packages `SR-050`, `SR-EI-0412`, and `SR-EI-047` are
-not included here. Their package manifests and hash inventories now provide an
-explicit default license for otherwise unmarked immutable artifacts, while an
-existing per-file license continues to take precedence.
+That stricter audit produced a finite closure set of 43 Markdown files:
 
-## Files Requiring Review
+- 9 public legal/policy documents;
+- 1 reusable public license template;
+- 2 root/governance documentation files;
+- 31 historical or reference research documents.
 
-### Runtime Tests And Benchmarks
+All 43 now state an explicit top-of-document license. Five of them were already
+covered by hash-bound package inventories but lacked a qualifying top notice:
+four relied only on the package default, while `PTR-500.md` also carried a
+compatible footer license. The affected `SR-050` and `SR-EI-0412` inventories
+were updated to their new content hashes.
 
-- `runtime/tests/THE FULL 200-TURN ATTRACTOR STABILITY TEST SCENARIO (v1.0).md`
-- `runtime/benchmarks/README.md`
-- `runtime/benchmarks/benchmark_report_v0.1_ERI-20251205-1.md`
-- `runtime/benchmarks/benchmark_report_v01_ERI-20251205-1.md`
+## License Disposition
 
-### Legal And Governance
+| Document Class | Files Updated | License |
+| --- | ---: | --- |
+| Public legal and policy texts | 9 | `CC BY 4.0` |
+| Reusable public license template | 1 | `CC BY 4.0` |
+| Root and governance documentation | 2 | `CC BY-NC 4.0` |
+| Historical and reference research documents | 31 | `CC BY-NC 4.0` |
 
-- `legal/canon-ip-framework.md`
-- `legal/marks-and-certification-policy.md`
-- `team/roadmap.md`
+The public-policy notices license document text only. They do not grant rights
+to Sigma marks, certification, patents, or proprietary runtime assets. Research
+notices do not override explicit licenses on referenced software, datasets, or
+other artifacts.
 
-### Historical Runtime Archive
+## Integrity Rules
 
-- `sigma-runtime/README.md`
-- `sigma-runtime/SR-EI-03/benchmark_report_SR_v035.md`
-- `sigma-runtime/SR-EI-03/report_james_20251212-195509.md`
-- `sigma-runtime/SR-EI-03/test_scenario_200.md`
-- `sigma-runtime/SR-EI-037/SIGMA_Runtime_0_3_7_CVR.md`
-- `sigma-runtime/SR-EI-037/code/README.md`
-- `sigma-runtime/SR-EI-037/code/test_scenario_200.md`
-- `sigma-runtime/SR-EI-037/data/report_james_20251218-105311.md`
-- `sigma-runtime/SR-EI-037/data/report_james_20251218-114051.md`
-- `sigma-runtime/SR-EI-037/data/report_james_20251218-121543.md`
-- `sigma-runtime/SR-EI-037/data/report_james_20251218-172315.md`
-- `sigma-runtime/SR-EI-037/data/report_james_20251218-180601.md`
-- `sigma-runtime/SR-EI-046/SIGMA_Runtime_v046_VALIDATION_REPORT.md`
-- `sigma-runtime/SR-052/README.md`
-- `sigma-runtime/SR-052/gemini-3-leo-500/2026-01-25-15-37-49_google_leo-audit.md`
-- `sigma-runtime/SR-052/gpt-5-2-leo-500/2026-01-25-16-41-25_openai_leo-audit.md`
-- `sigma-runtime/SR-053/README.md`
-- `sigma-runtime/SR-053/IASO-DEMO-120-KEY.md`
-- `sigma-runtime/SR-053/IASO-DEMO-120.md`
-- `sigma-runtime/SR-053/IASO-DEMO-120_Comparative_Analysis.md`
-
-## Remediation Rule
-
-For each file, the content owner must select and add one explicit license notice
-without changing historical results. Existing third-party or contributor terms
-must be preserved. A package-level default may be used only when accompanied by
-an immutable inventory that unambiguously identifies every covered artifact.
-
-Completion requires a legal/content-owner review, a content hash or commit ref,
-and verification that the new notice does not contradict an existing license.
+- Existing explicit per-file terms always take precedence over directory or
+  package defaults.
+- Historical report bodies remain semantically unchanged; raw JSON/PDF/image
+  artifacts remain byte-for-byte unchanged.
+- A future Markdown file must include an explicit self-license notice; a casual
+  reference to licensing elsewhere in the text is insufficient.
+- Binary or structured artifacts may use a package authority only when an
+  immutable path-and-hash inventory unambiguously covers them.
+- Any license change remains a content-owner and legal-review action rather than
+  an automated inference.

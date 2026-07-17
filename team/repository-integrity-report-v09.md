@@ -131,9 +131,9 @@ Governance, SRIP, and licensing layers are synchronized and current.
 
 - ✅ **File structure integrity:** 100% verified (no broken paths or orphaned files).  
 - ✅ **Link consistency:** all internal references functional.  
-- ⚠️ **License inventory:** current publication packages use explicit document
-  or package-level license authority; remaining historical gaps are tracked in
-  the repository license remediation backlog.
+- ✅ **License inventory:** all 130 Markdown documents carry explicit
+  per-document license authority; immutable non-Markdown evidence remains
+  covered by explicit package manifests and path-and-hash inventories.
 - ✅ **Attribution & DOI alignment:** all references valid and resolvable.  
 - ✅ **Safety architecture presence:** `srd/safety.md` added and integrated.  
 - ✅ **Governance and legal synchronization:** confirmed.  

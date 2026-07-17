@@ -1,6 +1,6 @@
 # Inventory metadata license: CC BY 4.0
 # Listed artifacts use their explicit per-file license or package-default CC BY-NC 4.0.
-46ac69d83d019672fc2ef9d4fc2693b9499892aff980b7a373ab5d606e455e4d  ./PTR-500.md
+fc5706c288f4edf27c8e81ea9710a9d980ee7a3737258d15da38585cd2b57419  ./PTR-500.md
 4e039fe07433903e63ae9559a8d57331adb7251e85c201c443da32e4255faa20  ./README.md
 40b38ae7b413ea44558e642c3bf091c3e04bcbc08815e98874c98cff0cc7b7dc  ./SIGMA_Runtime_PTR500_Report.pdf
 ad9a5825496524fa5c8e907f416c9b3c65692642f913443607c8981f3bc88001  ./SIGMA_Runtime_PTR500_Report_v2.pdf
@@ -19,7 +19,7 @@ e2741e68c611cb46383612e52a20994c30f34f6d60a19dbbab288da30fc69751  ./sigma_test_2
 7ebb15e987decbe06c56c152838ea8e69139bd01e2a65351d27c028cec8217be  ./sigma_test_2026-01-16-11-14-51_google_noema_v1/SDE_sigma_test_2026-01-16-11-14-51_google_noema_C351-C400.json
 96dba7e84a0e0262a80dcf0868c0425472f38d0c219f48fe99499b286d56fb57  ./sigma_test_2026-01-16-11-14-51_google_noema_v1/SDE_sigma_test_2026-01-16-11-14-51_google_noema_C401-C450.json
 069ceed40f44f435820f38e0651f15b64bfc3a55a5a69c9e507241540d177f3f  ./sigma_test_2026-01-16-11-14-51_google_noema_v1/SDE_sigma_test_2026-01-16-11-14-51_google_noema_C451-C500.json
-44bd4a0a569d223047203c97bf8028f5d26b5480e585ddb69ac7fe7301f99125  ./sigma_test_2026-01-16-11-14-51_google_noema_v1/gemini-3-flash-preview-sigmaruntime-noema-500.md
+7acca9e4a01c38f07edd9794ae4694c333827c11dfde4db4fabdb458ce50014b  ./sigma_test_2026-01-16-11-14-51_google_noema_v1/gemini-3-flash-preview-sigmaruntime-noema-500.md
 487eb9fcc13347fe39694ab52d5ee1469ed2542f7b9be641adcca8e969919a4d  ./sigma_test_2026-01-16-12-39-46_openai_noema/Noema_oAI_A_attractor_radar.png
 e0d165adb0eda7c1cc4c0205a31121001b7466e1a783d4764dcecdd4122715cd  ./sigma_test_2026-01-16-12-39-46_openai_noema/Noema_oAI_B_drift_heatmap.png
 1b0ee79187f517e89d871a1e3b9d9d61e349f8d30f5b1e930157b8a8ece599c2  ./sigma_test_2026-01-16-12-39-46_openai_noema/Noema_oAI_C_coherence_scatter.png
@@ -35,7 +35,7 @@ bbfbded3d1465cb873e4dec6641a3ae912122141f5d79f503c7de8051fd10131  ./sigma_test_2
 695619db7f9adf3f47cd68f726655628d882dfa8bca9ca6d1cb5143a96b03bc9  ./sigma_test_2026-01-16-12-39-46_openai_noema/SDE_sigma_test_2026-01-16-12-39-46_openai_noema_C351-C400.json
 a6a8bb666a3e7439eb63ee9d4995d54b68df8cd25f5a594be3ba58165443a8cb  ./sigma_test_2026-01-16-12-39-46_openai_noema/SDE_sigma_test_2026-01-16-12-39-46_openai_noema_C401-C450.json
 d1ab3cc5d30a9cc704880448cabc0414c42703a798a41810f85bd4931943c8cc  ./sigma_test_2026-01-16-12-39-46_openai_noema/SDE_sigma_test_2026-01-16-12-39-46_openai_noema_C451-C500.json
-4577bcf1c9022b8adb4ef3bf4088f1215b57a4ab3fd1b728b0210183b37e4387  ./sigma_test_2026-01-16-12-39-46_openai_noema/gpt-52-preview-sigmaruntime-noema-500.md
+4f14224750f1a10bb4dd0568854d9daba0a312659a5866a752c71c0596cb0cc9  ./sigma_test_2026-01-16-12-39-46_openai_noema/gpt-52-preview-sigmaruntime-noema-500.md
 f0c2e34dcd8d55416c7a5c63ff6a5d3ef7ee7fe0b9508cab21b288f7b2e4d0de  ./sigma_test_2026-01-18-18-16-10_google_noema_v2/Noema_Google_A_attractor_radar_v2.png
 2bc688554876141f697edd4d088a2a62b805e4f992d5af10944829b846e6ecb4  ./sigma_test_2026-01-18-18-16-10_google_noema_v2/Noema_Google_B_drift_heatmap_v2.png
 58c567a1c7086cf1faf20b364f1fcae0633708eec3e7541751e200cf4aac0bbe  ./sigma_test_2026-01-18-18-16-10_google_noema_v2/Noema_Google_C_coherence_scatter_v2.png
@@ -51,4 +51,4 @@ f4dbd55547e1b25759bca3f292b08b5c97f1c33eebe6224bf3928af5d78a2e66  ./sigma_test_2
 88deefd56e5b7c71cbd70f47c7e0e8f33ce94d1ed3c9b7d28542e56c57aef740  ./sigma_test_2026-01-18-18-16-10_google_noema_v2/SDE_sigma_test_2026-01-18-18-16-10_google_noema_C351-C400.json
 898af3936e2ae7a64c35b1a7a19f8810a85f117440e8a5f8de151155316438f0  ./sigma_test_2026-01-18-18-16-10_google_noema_v2/SDE_sigma_test_2026-01-18-18-16-10_google_noema_C401-C450.json
 70c30c82d14ec3d75bcaebc595d30aa2534231b4ef9494677966f2628f1f5e69  ./sigma_test_2026-01-18-18-16-10_google_noema_v2/SDE_sigma_test_2026-01-18-18-16-10_google_noema_C451-C500.json
-a64ab67921fe0f5248613059e9b6762caa59c5dea6b3e683fdb28c828db34d3f  ./sigma_test_2026-01-18-18-16-10_google_noema_v2/gemini-3-flash-preview-sigmaruntime-noema-500v2.md
+ccd78fa7911712567bb746eab521d5287917012a0c2c9e1f0e6fd52571225d0d  ./sigma_test_2026-01-18-18-16-10_google_noema_v2/gemini-3-flash-preview-sigmaruntime-noema-500v2.md
