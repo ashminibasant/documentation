@@ -1,0 +1,161 @@
+---
+title: SRIP Control Precedence Review
+description: Non-normative review model for resolving control conflicts across the SRIP architecture.
+published: false
+date: 2026-07-17T00:00:00.000Z
+tags:
+editor: markdown
+dateCreated: 2026-07-17T00:00:00.000Z
+---
+
+# SRIP Control Precedence Review
+
+Status: **Non-normative review draft**
+
+This document proposes a common way to inspect control conflicts across SRIPs.
+It does not override precedence rules declared in canonical proposals. Any
+conflict between this review model and an SRIP is a finding requiring a separate
+normative review.
+
+## 1. Why Precedence Is Needed
+
+Several SRIPs can legitimately produce different recommendations for one
+runtime state. For example:
+
+- entropy regulation may request perturbation while safety requests containment;
+- retrieval may find relevant material while memory-influence governance rejects
+  its authority;
+- dialectical generation may produce a useful candidate while governance blocks
+  canonical promotion;
+- a commerce semantic signal may suggest a candidate while deterministic
+  commerce state forbids the transition.
+
+The architecture needs a stable distinction between evidence, recommendation,
+authorization, execution, and post-effect audit.
+
+## 2. Control Classes
+
+| Class | Meaning | Representative SRIPs |
+| --- | --- | --- |
+| Evidence | Observes or measures state without granting authority | 03, 07, 08, 16, 21 |
+| Assembly | Selects, compresses, or structures context | 11, 14, 18, 25 |
+| Recommendation | Proposes regulation, perturbation, or candidate state | 10, 15, 16, 23 |
+| Boundary | Allows, limits, quarantines, or rejects influence | 06, 13, 20, 26 |
+| Domain authority | Owns deterministic state within a declared domain | 12 |
+| Governance authority | Evaluates legitimacy, capture, contestability, and promotion | 22 |
+| Effect execution | Represents authorized contact with an external target | 05, 17, 24, 25 |
+| Recovery | Preserves or restores valid state after conflict or instability | 06, 09, 13, 19 |
+
+One SRIP may occupy more than one class, but each individual output should state
+which class it represents.
+
+## 3. Provisional Precedence Stack
+
+The following order is a review hypothesis, not a new normative rule:
+
+1. **Non-bypassable safety and recursion boundaries** — `SRIP-06`.
+2. **Explicit current authorization, consent, and protected autonomy bounds** —
+   principally `SRIP-20`, with identity scope from `SRIP-13` and external
+   identity evidence from `SRIP-21`.
+3. **Legitimate governance and capture handling** — `SRIP-22`.
+4. **Provenance, retrieval, and memory-influence admission** — `SRIP-14` and
+   `SRIP-26`.
+5. **Declared deterministic domain invariants** — for commerce, `SRIP-12`.
+6. **Contradiction preservation and recovery** — `SRIP-19` and applicable
+   recovery paths in `SRIP-06`, `SRIP-09`, and `SRIP-13`.
+7. **Adaptive regulation and controlled perturbation** — `SRIP-03`, `SRIP-07`,
+   `SRIP-08`, `SRIP-10`, and `SRIP-15`.
+8. **Candidate generation, semantic optimization, and presentation choices** —
+   `SRIP-18`, `SRIP-23`, and non-normative style mechanisms.
+
+Higher precedence generally limits lower-precedence action. It does not permit a
+higher layer to fabricate missing evidence or silently assume authority outside
+its declared scope.
+
+## 4. Conflict Resolution Algorithm
+
+For any proposed state transition or effect:
+
+1. Identify the proposed action and the SRIP output that requested it.
+2. Classify that output as evidence, recommendation, boundary, domain authority,
+   governance authority, recovery, or effect execution.
+3. Bind the action to actor, target, scope, time, source, and authority.
+4. Evaluate non-bypassable safety constraints.
+5. Evaluate current authorization, consent, identity, and autonomy constraints.
+6. Evaluate provenance and memory-influence admission.
+7. Apply applicable deterministic domain invariants.
+8. Preserve unresolved valid conflict rather than forcing consensus.
+9. Allow optimization or generation only within the remaining action envelope.
+10. Record the winning constraint, suppressed proposals, evidence quality, and
+    resulting event or no-op.
+
+Missing authority fails closed for effects. Missing evidence should produce an
+unknown or deferred state rather than an invented authorization.
+
+## 5. Representative Conflict Cases
+
+### Relevant memory versus current authority
+
+`SRIP-14` may retrieve relevant material. `SRIP-26` may still limit or reject
+its influence because relevance does not establish current scope, consent, or
+authority.
+
+### Entropy regulation versus safety
+
+`SRIP-10` may recommend variation and `SRIP-15` may propose perturbation.
+`SRIP-06` can block the transition when recursion, instability, or containment
+constraints apply.
+
+### Self-model proposal versus autonomy
+
+`SRIP-16` may report a recurring control mismatch. That report is evidence.
+`SRIP-20` evaluates whether any boundary adjustment is authorized; the
+self-model cannot authorize its own expansion.
+
+### Dialectical candidate versus canonical promotion
+
+`SRIP-23` may generate a candidate from contradiction preserved by `SRIP-19`.
+The candidate does not delete the contradiction and cannot become canonical
+solely because it is coherent. Applicable governance remains required.
+
+### Commerce semantics versus commerce state
+
+`SRIP-18` may improve grounding and candidate assembly. `SRIP-12` retains
+deterministic authority over valid commerce transitions and rejection rules.
+
+### External effect versus transport success
+
+`SRIP-24` and `SRIP-25` distinguish a proposed effect, authorized effect,
+executed effect, and observed result. A successful tool or transport call does
+not retroactively establish valid authority.
+
+## 6. Required Audit Fields
+
+A future machine-readable control decision envelope should be able to expose:
+
+- proposed action and originating SRIP;
+- control class;
+- actor, target, scope, and time bounds;
+- evidence references and quality;
+- required and observed authority;
+- applicable constraints in evaluation order;
+- winning rule and suppressed proposals;
+- decision: allow, limit, defer, quarantine, reject, recover, or unknown;
+- effect event and post-effect evidence, when applicable.
+
+This review document does not define that schema. A schema would require a
+separate normative or machine-readable-artifact decision.
+
+## 7. Open Review Questions
+
+1. Does safety always precede governance, including emergency governance?
+2. How are conflicts between explicit user authorization and durable safety or
+   identity invariants represented?
+3. Does `SRIP-22` govern only institutional legitimacy, or runtime-local control
+   authority as well?
+4. Which recovery mechanism owns a conflict spanning identity, memory, and
+   contradiction simultaneously?
+5. Must every effect emit an `SRIP-25` event, or only implementations claiming
+   the relevant environment profile?
+6. Which precedence rules belong in existing SRIPs and which require a dedicated
+   normative control-precedence proposal?

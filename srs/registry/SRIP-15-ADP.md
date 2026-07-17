@@ -22,8 +22,8 @@
 | Date | 2026-05-20 |
 | Authors / Contributors | Sigma Stratum Research Group (SSRG) |
 | Owning Layer | Runtime Control / Attractor Dynamics / Controlled Perturbation |
-| Parent Specs | SRIP-01, SRIP-03, SRIP-07 |
-| Related Specs | SRIP-06, SRIP-09, SRIP-10, SRIP-13, SRIP-14 |
+| Parent Specs | SRIP-01, SRIP-03, SRIP-06, SRIP-07 |
+| Related Specs | SRIP-09, SRIP-10, SRIP-13, SRIP-14 |
 | Specification License | CC BY 4.0 |
 | Implementation Safe Harbor | Independent implementation permitted under public SRS/SRIP terms |
 | Machine-Readable Artifacts | Apache 2.0 where explicitly marked |

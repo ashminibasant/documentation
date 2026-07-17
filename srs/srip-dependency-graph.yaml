@@ -1,0 +1,106 @@
+schema_version: "0.1-review"
+status: non-normative-review-draft
+date: "2026-07-17"
+authority:
+  registry: srs/registry.md
+  reading_order: srs/architecture-reading-order.md
+  note: Individual SRIP documents remain authoritative.
+
+relationship_types:
+  - depends_on
+  - extends
+  - specializes
+  - constrains
+  - provides_evidence_to
+  - governs
+  - feeds
+  - recovers
+  - related_to
+  - amends
+  - supersedes
+
+nodes:
+  - {id: SRIP-00, title: Foundations and Scope, layer: foundational}
+  - {id: SRIP-01, title: Canonical Runtime Loop, layer: runtime}
+  - {id: SRIP-02, title: Attractor State Model, layer: runtime-state}
+  - {id: SRIP-03, title: Drift Metrics and Stabilization, layer: stability}
+  - {id: SRIP-04, title: Memory Layer Architecture, layer: memory}
+  - {id: SRIP-05, title: Interoperability Interface, layer: interoperability}
+  - {id: SRIP-06, title: Safety and Recursion Boundaries, layer: safety}
+  - {id: SRIP-07, title: Symbolic Density Layer, layer: semantics}
+  - {id: SRIP-08, title: Phase Vector Model and PRM, layer: control-telemetry}
+  - {id: SRIP-09, title: Long-Term Memory and Structural Coherence, layer: memory}
+  - {id: SRIP-10, title: Adaptive Entropy Protocol, layer: runtime-control}
+  - {id: SRIP-11, title: Compression and Memory Topology, layer: memory}
+  - {id: SRIP-12, title: Commerce Decision State, layer: commerce}
+  - {id: SRIP-13, title: Relational Identity Stabilization, layer: identity-safety}
+  - {id: SRIP-14, title: Retrieval and Memory Integration, layer: memory-retrieval}
+  - {id: SRIP-15, title: Attractor Dynamics and Controlled Perturbation, layer: runtime-control}
+  - {id: SRIP-16, title: Recursive Self-Modeling, layer: meta-observability}
+  - {id: SRIP-17, title: Multi-Agent Exchange, layer: interoperability}
+  - {id: SRIP-18, title: Commerce Semantic Integration, layer: commerce}
+  - {id: SRIP-19, title: Recursive Contradiction Buffering, layer: runtime-control}
+  - {id: SRIP-20, title: Autonomy Negotiation and Boundary Stabilization, layer: autonomy}
+  - {id: SRIP-21, title: External Identity Binding and Mode Reconciliation, layer: identity}
+  - {id: SRIP-22, title: Governance Recursion and Collusion Boundary, layer: governance}
+  - {id: SRIP-23, title: Dialectical Generation Layer, layer: semantic-evolution}
+  - {id: SRIP-24, title: Environment Interface Layer, layer: environment}
+  - {id: SRIP-25, title: Interaction Event Model, layer: event-semantics}
+  - {id: SRIP-26, title: Memory Influence Layer, layer: memory-governance}
+
+edges:
+  - {from: SRIP-01, to: SRIP-00, type: depends_on}
+  - {from: SRIP-02, to: SRIP-01, type: extends}
+  - {from: SRIP-03, to: SRIP-02, type: provides_evidence_to}
+  - {from: SRIP-04, to: SRIP-01, type: extends}
+  - {from: SRIP-05, to: SRIP-00, type: depends_on}
+  - {from: SRIP-06, to: SRIP-01, type: constrains}
+  - {from: SRIP-07, to: SRIP-02, type: provides_evidence_to}
+  - {from: SRIP-08, to: SRIP-01, type: provides_evidence_to}
+  - {from: SRIP-09, to: SRIP-04, type: extends}
+  - {from: SRIP-10, to: SRIP-03, type: extends}
+  - {from: SRIP-10, to: SRIP-07, type: related_to}
+  - {from: SRIP-11, to: SRIP-09, type: extends}
+  - {from: SRIP-13, to: SRIP-06, type: specializes}
+  - {from: SRIP-14, to: SRIP-04, type: extends}
+  - {from: SRIP-14, to: SRIP-09, type: depends_on}
+  - {from: SRIP-14, to: SRIP-11, type: depends_on}
+  - {from: SRIP-15, to: SRIP-02, type: extends}
+  - {from: SRIP-15, to: SRIP-06, type: depends_on}
+  - {from: SRIP-06, to: SRIP-15, type: constrains}
+  - {from: SRIP-16, to: SRIP-01, type: provides_evidence_to}
+  - {from: SRIP-17, to: SRIP-05, type: extends}
+  - {from: SRIP-18, to: SRIP-14, type: specializes}
+  - {from: SRIP-12, to: SRIP-18, type: governs}
+  - {from: SRIP-19, to: SRIP-03, type: recovers}
+  - {from: SRIP-19, to: SRIP-06, type: depends_on}
+  - {from: SRIP-19, to: SRIP-13, type: depends_on}
+  - {from: SRIP-19, to: SRIP-15, type: related_to}
+  - {from: SRIP-20, to: SRIP-13, type: extends}
+  - {from: SRIP-20, to: SRIP-16, type: governs}
+  - {from: SRIP-20, to: SRIP-17, type: constrains}
+  - {from: SRIP-21, to: SRIP-13, type: extends}
+  - {from: SRIP-21, to: SRIP-14, type: constrains}
+  - {from: SRIP-21, to: SRIP-19, type: feeds}
+  - {from: SRIP-22, to: SRIP-17, type: constrains}
+  - {from: SRIP-22, to: SRIP-20, type: governs}
+  - {from: SRIP-23, to: SRIP-15, type: depends_on}
+  - {from: SRIP-23, to: SRIP-19, type: depends_on}
+  - {from: SRIP-22, to: SRIP-23, type: governs}
+  - {from: SRIP-24, to: SRIP-05, type: extends}
+  - {from: SRIP-24, to: SRIP-14, type: depends_on}
+  - {from: SRIP-24, to: SRIP-21, type: depends_on}
+  - {from: SRIP-24, to: SRIP-22, type: depends_on}
+  - {from: SRIP-22, to: SRIP-24, type: constrains}
+  - {from: SRIP-25, to: SRIP-24, type: specializes}
+  - {from: SRIP-25, to: SRIP-22, type: depends_on}
+  - {from: SRIP-22, to: SRIP-25, type: constrains}
+  - {from: SRIP-26, to: SRIP-04, type: extends}
+  - {from: SRIP-26, to: SRIP-09, type: depends_on}
+  - {from: SRIP-26, to: SRIP-14, type: depends_on}
+  - {from: SRIP-26, to: SRIP-20, type: feeds}
+
+review_notes:
+  - Edges are integration hypotheses and must be checked against canonical Parent Specs and Related Specs.
+  - No amends or supersedes edges are asserted in this initial review graph.
+  - Reverse-looking governs and constrains edges express authority over the target capability, not document ownership.
