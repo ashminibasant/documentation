@@ -35,10 +35,12 @@
 | Commercial Runtime Boundary | Relevant policy or explicit covenant for protected Sigma marks, official certification, managed deployment, white-label, resale, CC BY-NC commercial use, and patent commitments |
 | Information Class | Open |
 | Change Class | SRS-only |
+| Specification Class | Measurement Specification |
 | Normative Status | Retained as foundational lineage with status note; not the active public control baseline unless introduced through an explicit successor reference or new proposal path. |
 | Conformance Level | Conceptual / Foundational Lineage |
 | SRD Synchronization Action | Deferred review |
-| Release Alignment Status | Foundational lineage; no active production control conformance claim is made by this document alone. |
+| Release Alignment Status | aligned with deferred SRD sync |
+| Release Alignment Notes | Foundational lineage; no active production control conformance claim is made by this document alone. |
 
 > **Public Status Note**
 > This document is retained as **foundational lineage with status note**, not as the active public control baseline.

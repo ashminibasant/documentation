@@ -34,10 +34,12 @@
 | Commercial Runtime Boundary | Relevant policy or explicit covenant for protected Sigma marks, official certification, managed deployment, white-label, resale, CC BY-NC commercial use, and patent commitments |
 | Information Class | Open |
 | Change Class | Mixed SRS+SRD |
+| Specification Class | Architecture Draft |
 | Normative Status | Defines a public draft architecture contract for detecting, bounding, cooling, preserving, and later reintegrating unresolved contradictions without premature consensus collapse. It does not authorize fact deletion, deceptive smoothing, false synthesis, or medical or mental-health interpretation. |
 | Conformance Level | Public Draft |
 | SRD Synchronization Action | Deferred follow-up synchronization for runtime control, memory, safety, and multi-agent architecture explanation. |
-| Release Alignment Status | Draft; no runtime enablement claim. |
+| Release Alignment Status | aligned with deferred SRD sync |
+| Release Alignment Notes | Draft; no runtime enablement claim. |
 
 ---
 
@@ -400,9 +402,9 @@ AEP helps prevent both fragmentation and crystallization. RCB should avoid
 turning buffered contradictions into fossilized unresolved state. AEP signals
 may help reopen or perturb stale contradictions.
 
-### 5. SRIP-11 Compression and Memory Topology
+### 5. SRIP-11 Structural Memory Compression
 
-CMT supports phase-aware recall, topology, and anchor facts. RCB must preserve
+SMC supports phase-aware recall, topology, and anchor facts. RCB must preserve
 anchor facts and avoid replacing source facts with cooled narrative summaries.
 
 ### 6. SRIP-13 Relational Identity Stabilization

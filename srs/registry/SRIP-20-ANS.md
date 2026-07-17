@@ -19,9 +19,9 @@
 | --- | --- |
 | SRIP | SRIP-20 |
 | Title | Autonomy Negotiation and Boundary Stabilization (ANS) |
-| Version | Public Draft v0.2 |
+| Version | Public Draft v0.3 |
 | Status | Public Draft |
-| Date | 2026-05-26 |
+| Date | 2026-07-17 |
 | Authors / Contributors | Vladimir Ryabinskiy; Sigma Stratum Research Group (SSRG) |
 | Owning Layer | Runtime Control / Identity Stability / Multi-Agent Boundary Governance |
 | Parent Specs | SRIP-06, SRIP-09, SRIP-13, SRIP-17, SRIP-19 |
@@ -35,10 +35,15 @@
 | Commercial Runtime Boundary | Relevant policy or explicit covenant for protected Sigma marks, official certification, managed deployment, white-label, resale, CC BY-NC commercial use, and patent commitments |
 | Information Class | Derived-Public |
 | Change Class | Mixed SRS+SRD |
+| Specification Class | Governance Architecture Draft |
 | Normative Status | Defines a public draft architecture contract for detecting, bounding, negotiating, auditing, and revalidating influence over runtime-local control state. It does not grant unrestricted autonomy, bypass higher-priority controls, or authorize autonomous self-modification. |
 | Conformance Level | Public Draft |
 | SRD Synchronization Action | Deferred follow-up synchronization for runtime control, identity boundary, memory/retrieval, multi-agent, and observability explanations. |
-| Release Alignment Status | Draft; no runtime enablement claim. |
+| Release Alignment Status | aligned with deferred SRD sync |
+| Release Alignment Notes | Draft; no runtime enablement claim. |
+
+This classification keeps ANS public and citable while separating its
+governance architecture from implementation-ready runtime conformance.
 
 ---
 
@@ -518,7 +523,8 @@ Any implementation claim must separately document:
 | --- | --- | --- | --- |
 | 0.1 | 2026-05-21 | Vladimir Ryabinskiy | Raw formation draft. |
 | 0.2 | 2026-05-26 | SSRG | Public draft normalization: lifecycle correction, public-boundary wording, Markdown repair, normative/informative separation, and release-alignment boundary. |
+| 0.3 | 2026-07-17 | SSRG | Classified as a Governance Architecture Draft; no implementation-readiness claim. |
 
 ---
 
-**End of SRIP-20 Public Draft v0.2**
+**End of SRIP-20 Public Draft v0.3**

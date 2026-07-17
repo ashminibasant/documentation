@@ -35,10 +35,12 @@
 | Commercial Runtime Boundary | Relevant policy or explicit covenant for protected Sigma marks, official certification, managed deployment, white-label, resale, CC BY-NC commercial use, and patent commitments |
 | Information Class | Open |
 | Change Class | SRS-only |
+| Specification Class | Runtime Protocol |
 | Normative Status | Defines the public safety and recursion-boundary vocabulary for bounded runtime operation and recoverable control transitions. |
 | Conformance Level | Public Draft / Foundational |
 | SRD Synchronization Action | Deferred review |
-| Release Alignment Status | Foundational draft; no production conformance claim is made by this document alone. |
+| Release Alignment Status | aligned with deferred SRD sync |
+| Release Alignment Notes | Foundational draft; no production conformance claim is made by this document alone. |
 
 > **Public Note**
 > This foundational document uses version-light public safety language.

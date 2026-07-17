@@ -33,10 +33,12 @@
 | Commercial Runtime Boundary | Relevant policy or explicit covenant for protected Sigma marks, official certification, managed deployment, white-label, resale, CC BY-NC commercial use, and patent commitments |
 | Information Class | Open |
 | Change Class | SRS-only |
+| Specification Class | Runtime Architecture Specification |
 | Normative Status | Defines the RMI contract for runtime-governed recall, bounded memory injection, provenance, compression, and optional external retrieval. It does not require a specific vector database, embedding model, or provider. |
 | Conformance Level | Partial Conformance / Bounded Implementation |
 | SRD Synchronization Action | Completed in `/srd/memory.md` and `/srd/attractors.md`. |
 | Release Alignment Status | aligned |
+| Release Alignment Notes | SRD synchronization is complete for the declared bounded scope. |
 
 ---
 

@@ -34,10 +34,12 @@
 | Commercial Runtime Boundary | Relevant policy or explicit covenant for protected Sigma marks, official certification, managed deployment, white-label, resale, CC BY-NC commercial use, and patent commitments |
 | Information Class | Open |
 | Change Class | Mixed SRS+SRD |
+| Specification Class | Runtime Architecture Specification |
 | Normative Status | Defines a bounded semantic integration layer and implementation-ready architecture contract for commerce-oriented runtime retrieval. It does not define commerce decision authority, pricing engines, transactional execution, or unrestricted reasoning governance. |
 | Conformance Level | Implementation-Ready Architecture |
 | SRD Synchronization Action | Deferred follow-up synchronization for retrieval architecture, runtime bundle documentation, and deployment topology explanation. |
-| Release Alignment Status | Implementation-ready public draft; no production deployment, synchronization, freshness, or runtime enablement guarantee is claimed. |
+| Release Alignment Status | aligned with deferred SRD sync |
+| Release Alignment Notes | Implementation-ready public draft; no production deployment, synchronization, freshness, or runtime enablement guarantee is claimed. |
 
 ---
 

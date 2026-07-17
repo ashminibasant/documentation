@@ -32,10 +32,12 @@
 | Commercial Runtime Boundary | Relevant policy or explicit covenant for protected Sigma marks, official certification, managed deployment, white-label, resale, CC BY-NC commercial use, and patent commitments |
 | Information Class | Open / Derived-Public |
 | Change Class | SRS-only / SRD-only / Mixed SRS+SRD |
+| Specification Class | Foundational Specification / Runtime Architecture Specification / Runtime Protocol / Measurement Specification / Architecture Draft / Governance Architecture Draft / Research Architecture Draft |
 | Normative Status | [what this document binds, if anything] |
 | Conformance Level | Conceptual / Public Draft / Implementation-Ready Architecture / Bounded Implementation / Partial Conformance / Minimum Conformance / Full Conformance / Production-Claimed |
 | SRD Synchronization Action | completed / deferred with target / not applicable |
 | Release Alignment Status | aligned / aligned with deferred SRD sync / no public-doc impact |
+| Release Alignment Notes | [bounded explanation; must not replace the enum status] |
 
 ---
 
@@ -176,7 +178,9 @@ Include migration steps or compatibility flags if relevant.
 - [ ] SRS/SRIP version dependencies are listed.
 - [ ] License fields are complete.
 - [ ] Public/proprietary boundary has been reviewed.
+- [ ] Specification class has been selected from the public registry.
 - [ ] SRD synchronization impact has been reviewed.
+- [ ] Release alignment uses the governed enum and separate notes.
 - [ ] Conformance level impact has been reviewed.
 - [ ] Marks and certification impact has been reviewed.
 
@@ -203,6 +207,6 @@ Use DOI or repository links.
 
 ---
 
-**Template Version:** 1.2 (May 2026)
+**Template Version:** 1.3 (July 2026)
 Maintained by the **Sigma Stratum Research Group (SSRG)**
 For procedural guidance, see [`/team/srip-process.md`](https://github.com/sigmastratum/documentation/blob/main/team/srip-process.md)

@@ -32,10 +32,12 @@
 | Commercial Runtime Boundary | Relevant policy or explicit covenant for protected Sigma marks, official certification, managed deployment, white-label, resale, CC BY-NC commercial use, and patent commitments |
 | Information Class | Open |
 | Change Class | SRS-only |
+| Specification Class | Runtime Protocol |
 | Normative Status | Defines a deterministic commerce decision-state control contract. It does not define pricing engines, payment processing, transactional execution, or autonomous commerce authority. |
 | Conformance Level | Partial Conformance / Bounded Implementation |
 | SRD Synchronization Action | Deferred review |
-| Release Alignment Status | Active proposal with partial implementation; no broader production commerce capability is claimed by this document alone. |
+| Release Alignment Status | aligned with deferred SRD sync |
+| Release Alignment Notes | Active proposal with partial implementation; no broader production commerce capability is claimed by this document alone. |
 
 ---
 

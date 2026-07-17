@@ -43,10 +43,12 @@ Product assets, protected Sigma marks, official certification, compatibility bad
 | Commercial Runtime Boundary | Relevant policy or explicit covenant for protected Sigma marks, official certification, managed deployment, white-label, resale, CC BY-NC commercial use, and patent commitments |
 | Information Class | Open |
 | Change Class | Mixed SRS+SRD |
+| Specification Class | Measurement Specification |
 | Normative Status | Defines the public AEP control contract for bounded entropy regulation and anti-crystallization objectives. It does not mandate provider-specific API controls, private runtime paths, exact prompt-injection recipes, or benchmark outcomes as conformance evidence. |
 | Conformance Level | Partial Conformance / Bounded Implementation |
 | SRD Synchronization Action | Deferred follow-up synchronization for public AEP explanation, format-control behavior, and positional crystallization extension boundaries. |
-| Release Alignment Status | Public draft with bounded implementation evidence; no full production conformance claim. |
+| Release Alignment Status | aligned with deferred SRD sync |
+| Release Alignment Notes | Public draft with bounded implementation evidence; no full production conformance claim. |
 
 ---
 

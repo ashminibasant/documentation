@@ -33,10 +33,12 @@
 | Commercial Runtime Boundary | Relevant policy or explicit covenant for protected Sigma marks, official certification, managed deployment, white-label, resale, CC BY-NC commercial use, and patent commitments |
 | Information Class | Open |
 | Change Class | Mixed SRS+SRD |
+| Specification Class | Runtime Protocol |
 | Normative Status | Defines a bounded public proposal for multi-agent exchange between Sigma-compatible runtimes. It does not define an always-on mesh, shared hidden memory, autonomous collective agency, or a production deployment claim. |
 | Conformance Level | Public Draft |
 | SRD Synchronization Action | Completed in `/srd/architecture.md`, `/srd/memory.md`, `/srd/safety.md`, `/srd/runtime-loop.md`, and `/srd/faq.md`. |
-| Release Alignment Status | Draft; no runtime enablement claim. |
+| Release Alignment Status | aligned |
+| Release Alignment Notes | Draft; no runtime enablement claim. |
 
 ---
 
@@ -237,7 +239,7 @@ ExchangeEnvelope:
 |---|---|---|
 | **Exchange Acceptance Rate (EAR)** | Share of artifacts accepted after gating. | Detects whether exchange scope is too broad or too restrictive. |
 | **Exchange Drift Impact (EDI)** | Drift change observed after artifact reintegration. | Tracks destabilizing exchange effects. |
-| **Provenance Completeness (PC)** | Completeness of source, scope, timestamp, and integrity metadata. | Prevents untraceable material from becoming state. |
+| **Provenance Completeness (PRC)** | Completeness of source, scope, timestamp, and integrity metadata. | Prevents untraceable material from becoming state. |
 | **Cross-Agent Recall Fidelity (CARF)** | Accuracy of recalling imported evidence with source attribution preserved. | Measures whether exchange helps without corrupting memory. |
 | **Quarantine Rate (QR)** | Share of artifacts held for review or narrowed import. | Indicates safety pressure or trust mismatch. |
 | **Exchange Latency (EL)** | Time between artifact creation, gate decision, and target availability. | Measures operational responsiveness. |

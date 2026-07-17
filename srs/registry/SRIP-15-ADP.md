@@ -17,9 +17,9 @@
 | --- | --- |
 | SRIP | SRIP-15 |
 | Title | Attractor Dynamics and Controlled Perturbation Layer (ADP) |
-| Version | Public Draft v0.2 |
+| Version | Public Draft v0.3 |
 | Status | Public Draft |
-| Date | 2026-05-20 |
+| Date | 2026-07-17 |
 | Authors / Contributors | Sigma Stratum Research Group (SSRG) |
 | Owning Layer | Runtime Control / Attractor Dynamics / Controlled Perturbation |
 | Parent Specs | SRIP-01, SRIP-03, SRIP-07 |
@@ -33,10 +33,12 @@
 | Commercial Runtime Boundary | Relevant policy or explicit covenant for protected Sigma marks, official certification, managed deployment, white-label, resale, CC BY-NC commercial use, and patent commitments |
 | Information Class | Open |
 | Change Class | SRS-only |
+| Specification Class | Architecture Draft |
 | Normative Status | Defines controlled perturbation as an optional runtime-governed transition layer for escaping attractor fixation without violating safety, drift, density, identity, memory, or retrieval constraints. |
 | Conformance Level | Public Draft |
 | SRD Synchronization Action | Completed in `/srd/attractors.md`, with supporting memory-language alignment in `/srd/memory.md`. |
 | Release Alignment Status | aligned |
+| Release Alignment Notes | SRD synchronization is complete; this remains an architecture draft without a runtime enablement claim. |
 
 ---
 
@@ -251,6 +253,39 @@ trajectory is stable, scoped, and safe to consolidate.
 
 ---
 
+## IX-A. Non-Equivalence To Decoding Controls
+
+ADP and provider decoding controls operate at different boundaries.
+
+| Surface | Temperature / top-p / repetition penalty | ADP |
+| --- | --- | --- |
+| Primary object | Next-token probability distribution | Runtime trajectory and bounded field state |
+| Scope | One generation request | Detection, authorization, exploration, evaluation, and return transaction |
+| Authority inputs | Provider sampling configuration | Drift, density, identity, memory, retrieval, safety, and provenance evidence |
+| State | Usually request-local | Versioned exploration window with lineage and return state |
+| Return behavior | Restore prior sampling parameters | Re-anchor, narrow, suppress, consolidate, or revert under control precedence |
+| External material | Does not govern provenance | May admit scoped retrieval as exploratory evidence through SRIP-14 |
+
+A decoding-parameter change may be one implementation-specific perturbation
+actuator, but it is not ADP conformance by itself. Conversely, ADP must not
+claim benefit over ordinary sampling controls without comparative evidence.
+
+Before an implementation claims that ADP improves fixation recovery, it must
+run a versioned ablation with matched model, prompt, source state, sampling
+budget, and evaluation protocol. The minimum comparison is:
+
+1. unchanged decoding baseline;
+2. decoding-only adjustment, such as temperature, top-p, or repetition penalty;
+3. ADP with unchanged decoding;
+4. ADP plus decoding adjustment, if that combination is supported.
+
+The report must separate lexical repetition, output diversity, trajectory
+movement, identity continuity, safety violations, and return-path success.
+Scenario expectation is not outcome truth, and a higher-diversity response is
+not automatically a successful trajectory transition.
+
+---
+
 ## X. Control Precedence
 
 Perturbation is subordinate to higher-priority runtime controls.
@@ -353,6 +388,8 @@ A runtime more fully conforms when it additionally:
 3. models exploration windows as first-class runtime state;
 4. supports consolidation rules for successful trajectory transitions;
 5. verifies return-path behavior under scenario replay.
+6. publishes a matched ablation against decoding-only controls before claiming
+   that ADP provides additional fixation-recovery benefit.
 
 ---
 
@@ -368,6 +405,7 @@ A runtime more fully conforms when it additionally:
 | Controlled return path | Required for release-complete conformance |
 | Full trajectory modeling | Advanced |
 | Multi-attractor transitions | Future |
+| ADP vs decoding-control ablation | Required for comparative benefit claims |
 
 ---
 

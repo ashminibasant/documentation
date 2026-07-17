@@ -33,10 +33,12 @@
 | Commercial Runtime Boundary | Relevant policy or explicit covenant for protected Sigma marks, official certification, managed deployment, white-label, resale, CC BY-NC commercial use, and patent commitments |
 | Information Class | Open |
 | Change Class | SRS-only |
+| Specification Class | Runtime Architecture Specification |
 | Normative Status | Defines a session-scoped identity and relational-boundary stabilization contract. It is not a style normalizer, censorship layer, or canonical-identity mutation path. |
 | Conformance Level | Public Draft |
 | SRD Synchronization Action | Deferred review |
-| Release Alignment Status | Active proposal; no full runtime enablement or universal user-facing control claim is made by this document alone. |
+| Release Alignment Status | aligned with deferred SRD sync |
+| Release Alignment Notes | Active proposal; no full runtime enablement or universal user-facing control claim is made by this document alone. |
 
 ---
 
@@ -99,7 +101,7 @@ RIS does not attempt to:
 - convert companion agents into support agents;
 - forbid metaphor, intimacy, humor, or tone mirroring;
 - eliminate all strong language;
-- replace AEP, CMT, CDS, memory, or core safety systems;
+- replace AEP, SMC, CDS, memory, or core safety systems;
 - mutate canonical identity from ordinary user dialogue;
 - make one session the canonical relational state of the whole agent;
 - expose internal policy, validator state, or trigger names in user-facing output.
@@ -479,7 +481,7 @@ RIS may influence generation through hidden, turn-scoped runtime instructions or
 post-generation validation. Such instructions are internal and must not appear in
 user-facing output.
 
-### 3. Memory and CMT
+### 3. Memory and SMC
 
 Memory may store session-local aliases and relational facts only with their
 proper scope. Retrieval must preserve session and participant boundaries.

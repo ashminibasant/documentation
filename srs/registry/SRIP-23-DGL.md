@@ -19,9 +19,9 @@
 | --- | --- |
 | SRIP | SRIP-23 |
 | Title | Dialectical Generation Layer (DGL) |
-| Version | Public Draft v0.2 |
+| Version | Public Draft v0.3 |
 | Status | Public Draft |
-| Date | 2026-06-27 |
+| Date | 2026-07-17 |
 | Authors / Contributors | Sigma Stratum Research Group (SSRG) |
 | Owning Layer | Semantic Evolution / Attractor Formation / Runtime Control |
 | Parent Specs | SRIP-15, SRIP-19, SRIP-22 |
@@ -35,10 +35,15 @@
 | Commercial Runtime Boundary | Relevant policy or explicit covenant for protected Sigma marks, official certification, managed deployment, white-label, resale, CC BY-NC commercial use, and patent commitments |
 | Information Class | Open |
 | Change Class | Mixed SRS+SRD |
+| Specification Class | Research Architecture Draft |
 | Normative Status | Defines a public draft contract for generating non-canonical semantic candidates from preserved contradiction, attractor tension, and unresolved multiplicity. It does not authorize truth claims, category canonicalization, identity mutation, memory overwrite, or contradiction deletion. |
 | Conformance Level | Public Draft / No runtime conformance claim |
 | SRD Synchronization Action | Initial SRD synchronization completed in `/srd/core-concepts`; broader synchronization for attractor dynamics, contradiction buffering, memory/retrieval, governance, and semantic evolution remains deferred follow-up. |
-| Release Alignment Status | Public draft architecture proposal; no runtime enablement, production behavior, or conformance claim is made by this document alone. |
+| Release Alignment Status | aligned with deferred SRD sync |
+| Release Alignment Notes | Public draft architecture proposal; no runtime enablement, production behavior, or conformance claim is made by this document alone. |
+
+This classification keeps DGL public and citable while requiring a separate
+evaluation protocol before any implementation-conformance claim.
 
 ---
 
@@ -280,7 +285,7 @@ Example non-binding metrics:
 | SRIP-19 RCB | Parent | DGL must preserve contradiction reservoirs and must not resolve, consume, or delete them by generation alone. |
 | SRIP-22 GRC | Parent | Governance authorization is required before candidate structures become canonical categories. |
 | SRIP-09 LTM | Related | Durable memory lineage and structural continuity may provide source material and persistence constraints. |
-| SRIP-11 CMT | Related | Compression and topology may inform whether conflict reflects redundancy or structural difference. |
+| SRIP-11 SMC | Related | Structural compression and topology may inform whether conflict reflects redundancy or structural difference. |
 | SRIP-13 RIS | Related | Relational identity boundaries constrain candidate generation involving identity or relationship pressure. |
 | SRIP-14 RMI | Related | Retrieval and memory provenance constrain candidate source material and persistence. |
 | SRIP-16 RSM | Related | Self-modeling and recurrence evidence may support validation of candidate evolution. |
@@ -387,3 +392,4 @@ This draft does not deprecate or supersede existing SRIPs. It adds a semantic-ev
 | --- | --- | --- | --- |
 | 0.1 | 2026-06-26 | SSRG | Formation draft. |
 | 0.2 | 2026-06-27 | SSRG | Public draft normalization with boundary, dependency, non-goal, conformance, and SRD synchronization fields. |
+| 0.3 | 2026-07-17 | SSRG | Classified as a Research Architecture Draft; implementation conformance requires a separate evaluation protocol. |

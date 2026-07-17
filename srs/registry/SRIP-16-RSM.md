@@ -17,9 +17,9 @@
 | --- | --- |
 | SRIP | SRIP-16 |
 | Title | Recursive Self-Modeling (RSM) |
-| Version | Public Draft v0.2 |
+| Version | Public Draft v0.3 |
 | Status | Public Draft |
-| Date | 2026-05-20 |
+| Date | 2026-07-17 |
 | Authors / Contributors | Sigma Stratum Research Group (SSRG) |
 | Owning Layer | Runtime Control / Meta-Observability / Reflective Evidence |
 | Parent Specs | SRIP-03, SRIP-06, SRIP-08, SRIP-09, SRIP-10, SRIP-11 |
@@ -33,10 +33,12 @@
 | Commercial Runtime Boundary | Relevant policy or explicit covenant for protected Sigma marks, official certification, managed deployment, white-label, resale, CC BY-NC commercial use, and patent commitments |
 | Information Class | Open |
 | Change Class | Mixed SRS+SRD |
+| Specification Class | Architecture Draft |
 | Normative Status | Defines bounded runtime self-modeling as an internal evidence layer for meta-stability, reflective telemetry, and control proposals. It does not grant autonomous self-modification authority. |
 | Conformance Level | Public Draft |
 | SRD Synchronization Action | Completed in `/srd/architecture.md`, `/srd/runtime-loop.md`, `/srd/memory.md`, `/srd/attractors.md`, `/srd/safety.md`, and `/srd/core-concepts.md`. |
-| Release Alignment Status | Draft; no runtime enablement claim. |
+| Release Alignment Status | aligned |
+| Release Alignment Notes | Draft; no runtime enablement claim. |
 
 ---
 
@@ -107,7 +109,7 @@ An implementation conforms to SRIP-16 only if it:
 | Term | Description |
 |---|---|
 | **Runtime Self-Model** | A bounded operational representation of current runtime posture, recent control history, and stability pressure. |
-| **Meta-Vector** | A compact structured snapshot of reflective state, such as phase, drift pressure, density pressure, coherence estimate, and recovery posture. |
+| **Meta-Vector** | A compact structured snapshot of reflective state, such as phase, typed pressure evidence, coherence evidence, and recovery posture. |
 | **Reflective Snapshot** | A short record explaining what the runtime observed about its own recent operation. |
 | **Self-Model Event** | An auditable event emitted when the runtime observes a significant self-model change, anomaly, recovery pattern, or intervention proposal. |
 | **Reflective Pressure** | The degree to which the runtime should allocate control attention to self-model evidence rather than ordinary task continuation. |
@@ -154,6 +156,27 @@ After selected runtime cycles or control checkpoints, the runtime may compute a 
 
 The snapshot should be compact enough to support telemetry and control decisions without dominating ordinary task context.
 
+#### 1.1 Pressure Evidence Contract
+
+RSM does not define universal floating-point pressure values. Drift, coherence,
+density, and recovery evidence originate in their governing metric or control
+layers and remain bound to those source contracts.
+
+RSM pressure uses the following categorical states:
+
+| State | Meaning |
+| --- | --- |
+| `low` | Valid source evidence is below the profile's attention corridor. |
+| `nominal` | Valid source evidence is inside the profile's ordinary corridor. |
+| `elevated` | Valid source evidence requires bounded reflective attention. |
+| `critical` | Valid source evidence requires immediate governing-layer review. |
+| `unverified` | Source evidence, validity, calibration, or binding is missing or incompatible. |
+
+Every non-`unverified` state must carry source metric or event refs, validity,
+window, and calibration profile ref. RSM must not derive a state from transcript
+text, fill missing inputs with zero, or convert an uncalibrated float into a
+normal-looking pressure state.
+
 ### 2. Reflective Snapshotting
 
 The runtime may create short reflective records when:
@@ -190,17 +213,28 @@ RSM must track how much attention it consumes. If reflective processing begins t
 The following structures are illustrative public contracts. Implementations may use different internal representations if they preserve equivalent boundaries.
 
 ```python
+class PressureEvidence:
+    state: Literal["low", "nominal", "elevated", "critical", "unverified"]
+    validity: Literal["valid", "degraded", "unverified"]
+    source_refs: list[str]
+    window_ref: str | None
+    calibration_profile_ref: str | None
+
 class MetaVector:
     id: str
     cycle_id: str
     phase: str
-    coherence_pressure: float
-    drift_pressure: float
-    density_pressure: float
+    coherence_pressure: PressureEvidence
+    drift_pressure: PressureEvidence
+    density_pressure: PressureEvidence
     recovery_posture: str
     reflection_budget_used: float
     source_events: list[str]
 ```
+
+Legacy v0.2 float pressure fields are deprecated evidence, not interchangeable
+with v0.3 states. They may be migrated only through a versioned calibration
+profile that preserves source lineage. Otherwise they hydrate as `unverified`.
 
 ```python
 class ReflectiveSnapshot:
@@ -234,6 +268,12 @@ class SelfModelEvent:
 | **Self-Correction Count (SCC)** | Count of accepted bounded interventions over a cycle window. | Measures intervention pressure without implying autonomous cognition. |
 | **Reflection Budget Ratio (RBR)** | Share of available cycle/token/control budget consumed by reflective work. | Prevents introspection from dominating task execution. |
 | **Recovery Recurrence (RR)** | Frequency of repeated recovery or verification events. | Identifies unresolved instability or hidden control loops. |
+
+`MC`, `RD`, `SCC`, `RBR`, and `RR` are metric vocabulary, not universal numeric
+formulas. A numeric implementation must register its formula, domain, window,
+missing-value behavior, and calibration evidence in the
+[SRS Metric Registry](../metric-registry.md). Without that binding, the metric
+is `unverified` and cannot authorize a control proposal.
 
 **Bounded feedback flow:**
 
@@ -274,7 +314,7 @@ RSM depends on and complements existing SRIPs:
 - **SRIP-08** supplies phase and telemetry context.
 - **SRIP-09** supplies long-term memory and structural coherence context.
 - **SRIP-10 AEP** supplies entropy posture and anti-crystallization control.
-- **SRIP-11 CMT** supplies compression and memory-topology context.
+- **SRIP-11 SMC** supplies structural compression and memory-topology context.
 - **SRIP-13 RIS** supplies relational identity-stability evidence.
 - **SRIP-14 RMI** supplies retrieval and memory-integration context.
 - **SRIP-15 ADP** supplies controlled perturbation pathways.
@@ -297,7 +337,23 @@ The intended outcome is not a more autonomous agent. The intended outcome is a m
 
 ---
 
-## XIII. Release Alignment
+## XIII. Measurement Conformance
+
+An RSM implementation claiming measurement conformance must:
+
+1. emit typed pressure evidence rather than unbound float values;
+2. preserve source metric/event refs and validity;
+3. bind every numeric derived metric to a versioned metric profile;
+4. publish `unverified` for missing or incompatible authority;
+5. demonstrate equivalent hot, warm, and cold hydration;
+6. keep all RSM evidence action-inert until a governing layer evaluates it.
+
+Architecture-only conformance may implement the evidence boundary and data
+contracts without claiming calibrated pressure measurement.
+
+---
+
+## XIV. Release Alignment
 
 SRIP-16 is a public draft architecture proposal. It does not claim that RSM is fully implemented in any current release.
 
@@ -311,5 +367,5 @@ Any implementation claim must separately document:
 
 ---
 
-**End of SRIP-16 Public Draft v0.2**
+**End of SRIP-16 Public Draft v0.3**
 *Sigma Stratum Research Group - 2026*

@@ -36,10 +36,12 @@
 | Commercial Runtime Boundary | Relevant policy or explicit covenant for protected Sigma marks, official certification, managed deployment, white-label, resale, CC BY-NC commercial use, and patent commitments |
 | Information Class | Open |
 | Change Class | Mixed SRS+SRD |
+| Specification Class | Runtime Architecture Specification |
 | Normative Status | Public draft contract for separating memory existence, retrieval, persistence, and behavioral influence. It does not define a database schema, vector store, prompt-injection mechanism, memory product API, or production memory enablement by itself. |
 | Conformance Level | Public Draft / No runtime conformance claim |
 | SRD Synchronization Action | Initial SRD synchronization completed in `/srd/memory`; broader synchronization for retrieval governance, runtime evidence, environment interaction, trajectory governance, and design-partner explanations remains deferred follow-up. |
-| Release Alignment Status | Public draft architecture proposal; no runtime enablement, production behavior, memory write path, prompt overlay, response mutation, or conformance claim is made by this document alone. |
+| Release Alignment Status | aligned with deferred SRD sync |
+| Release Alignment Notes | Public draft architecture proposal; no runtime enablement, production behavior, memory write path, prompt overlay, response mutation, or conformance claim is made by this document alone. |
 
 ---
 
@@ -435,7 +437,7 @@ A conformant MIL implementation must not:
 | SRIP-01 Runtime Loop | Related | MIL attaches to trajectory continuation without replacing the canonical loop. |
 | SRIP-03 Drift Metrics | Related | Memory influence may affect drift and stability signals. |
 | SRIP-06 Safety and Recursion Boundaries | Related | Memory influence must remain within recursion and safety boundaries. |
-| SRIP-11 CMT | Related | Compression topology affects how memory candidates and summaries are formed. |
+| SRIP-11 SMC | Related | Structural compression topology affects how memory candidates and summaries are formed. |
 | SRIP-13 RIS | Related | Relational identity boundaries constrain influence from relational memory. |
 | SRIP-15 ADP | Related | Memory may act as stabilizer or perturbation source only under bounded influence. |
 | SRIP-19 RCB | Related | Contested memories should be buffered rather than forced into influence. |

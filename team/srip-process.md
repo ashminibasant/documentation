@@ -10,7 +10,7 @@ dateCreated: 2025-11-30T04:52:16.687Z
 
 > **Sigma Stratum Documentation – License Notice**
 > This document is part of the **Sigma Runtime Standard (SRS)** and the
-> **Sigma Stratum Documentation Set (SRD)**.
+> **Sigma Runtime Documentation (SRD)**.
 >
 > It is licensed under **Creative Commons Attribution–NonCommercial 4.0
 > (CC BY-NC 4.0)**.
@@ -222,11 +222,13 @@ Every SRIP proposal must include the following minimum traceability data:
 
 - information class: `Open` or `Derived-Public`
 - change class: `SRS-only`, `SRD-only`, or `Mixed SRS+SRD`
+- specification class from `/srs/specification-classes`
 - affected SRS artifact(s)
 - affected SRD artifact(s), if any
 - normative status and impact summary
 - SRD synchronization action
 - release alignment status
+- release alignment notes, when qualification or deferred work must be stated
 
 Allowed release alignment status values:
 
@@ -235,6 +237,8 @@ Allowed release alignment status values:
 - `no public-doc impact`
 
 If a proposal cannot truthfully declare these fields, it is not ready for review.
+The status field carries only the governed enum. Qualifications belong in
+`Release Alignment Notes`; prose must not replace the enum value.
 
 ### 3A. Conformance Vocabulary
 

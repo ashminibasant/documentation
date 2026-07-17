@@ -19,9 +19,9 @@
 | --- | --- |
 | SRIP | SRIP-22 |
 | Title | Governance Recursion and Collusion Boundary (GRC) |
-| Version | Public Draft v0.2 |
+| Version | Public Draft v0.3 |
 | Status | Public Draft |
-| Date | 2026-05-28 |
+| Date | 2026-07-17 |
 | Authors / Contributors | Sigma Stratum Research Group (SSRG) |
 | Owning Layer | Governance / Runtime Authority / Constitutional Control / Collusion Boundary |
 | Parent Specs | SRIP-05, SRIP-06, SRIP-09, SRIP-13, SRIP-17, SRIP-19, SRIP-20 |
@@ -35,10 +35,15 @@
 | Commercial Runtime Boundary | Relevant policy or explicit covenant for protected Sigma marks, official certification, managed deployment, white-label, resale, CC BY-NC commercial use, and patent commitments |
 | Information Class | Open |
 | Change Class | Mixed SRS+SRD |
+| Specification Class | Governance Architecture Draft |
 | Normative Status | Defines a public draft contract for governance recursion boundaries, collusion assumptions, update authority, capture visibility, emergency override constraints, auditability, certification legitimacy, and fork/exit conditions. It does not claim that any runtime can internally prove legitimacy under total collusion of its own governors. |
 | Conformance Level | Public Draft / No runtime conformance claim |
 | SRD Synchronization Action | Deferred follow-up synchronization for governance, runtime control, certification, conformance, legal-boundary explanation, and operator-facing documentation. |
-| Release Alignment Status | Public draft architecture proposal; no runtime enablement, certification, or production governance claim is made by this document alone. |
+| Release Alignment Status | aligned with deferred SRD sync |
+| Release Alignment Notes | Public draft architecture proposal; no runtime enablement, certification, or production governance claim is made by this document alone. |
+
+This classification keeps GRC public and citable while separating governance
+axioms from runtime implementation conformance and legal validity.
 
 ---
 
@@ -1208,4 +1213,4 @@ forkable continuity
 
 ---
 
-End of SRIP-22 Public Draft v0.2.
+End of SRIP-22 Public Draft v0.3.

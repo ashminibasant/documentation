@@ -35,10 +35,12 @@
 | Commercial Runtime Boundary | Relevant policy or explicit covenant for protected Sigma marks, official certification, managed deployment, white-label, resale, CC BY-NC commercial use, and patent commitments |
 | Information Class | Open |
 | Change Class | Mixed SRS+SRD |
+| Specification Class | Runtime Protocol |
 | Normative Status | Defines a public draft contract for classifying and governing interaction between stabilized runtime trajectories and external environments. It does not define an SDK, provider API, workflow engine, planner, tool framework, or production action permission by itself. |
 | Conformance Level | Public Draft / No runtime conformance claim |
 | SRD Synchronization Action | Initial SRD synchronization completed in `/srd/environment-interaction-and-events`; broader synchronization for runtime architecture, agent trajectory, memory/retrieval, governance, external interaction, and tool/action explanation remains deferred follow-up. |
-| Release Alignment Status | Public draft architecture proposal; no runtime enablement, production behavior, SDK/API, or conformance claim is made by this document alone. |
+| Release Alignment Status | aligned with deferred SRD sync |
+| Release Alignment Notes | Public draft architecture proposal; no runtime enablement, production behavior, SDK/API, or conformance claim is made by this document alone. |
 
 ---
 

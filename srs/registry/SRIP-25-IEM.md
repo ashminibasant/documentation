@@ -35,10 +35,12 @@
 | Commercial Runtime Boundary | Relevant policy or explicit covenant for protected Sigma marks, official certification, managed deployment, white-label, resale, CC BY-NC commercial use, and patent commitments |
 | Information Class | Open |
 | Change Class | Mixed SRS+SRD |
+| Specification Class | Runtime Protocol |
 | Normative Status | Defines a public draft semantic model for interaction events crossing the Environment Interface Layer boundary. It does not define an event bus, database schema, serialization format, provider API, transport protocol, workflow engine, replay system, or production implementation. |
 | Conformance Level | Public Draft / No runtime conformance claim |
 | SRD Synchronization Action | Initial SRD synchronization completed in `/srd/environment-interaction-and-events`; broader synchronization for EIL, tool/action boundaries, memory/retrieval, governance, event/evidence, replay, and runtime architecture explanation remains deferred follow-up. |
-| Release Alignment Status | Public draft architecture proposal; no runtime enablement, production behavior, schema serialization, event bus, replay system, or conformance claim is made by this document alone. |
+| Release Alignment Status | aligned with deferred SRD sync |
+| Release Alignment Notes | Public draft architecture proposal; no runtime enablement, production behavior, schema serialization, event bus, replay system, or conformance claim is made by this document alone. |
 
 ---
 

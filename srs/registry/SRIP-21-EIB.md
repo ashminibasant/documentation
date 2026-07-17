@@ -35,10 +35,12 @@
 | Commercial Runtime Boundary | Relevant policy or explicit covenant for protected Sigma marks, official certification, managed deployment, white-label, resale, CC BY-NC commercial use, and patent commitments |
 | Information Class | Open |
 | Change Class | Mixed SRS+SRD |
+| Specification Class | Architecture Draft |
 | Normative Status | Defines a public draft contract for preserving stable external entity identity across conflicting observed modes, affective traces, retrieval evidence, memory records, and multi-agent reports. It does not authorize fact deletion, false synthesis, identity invention, or medical interpretation. |
 | Conformance Level | Public Draft / No runtime conformance claim |
 | SRD Synchronization Action | Deferred follow-up synchronization for identity, memory, retrieval, attractor dynamics, and contradiction-buffering explanation. |
-| Release Alignment Status | Public draft architecture proposal; no runtime enablement or production conformance claim is made by this document alone. |
+| Release Alignment Status | aligned with deferred SRD sync |
+| Release Alignment Notes | Public draft architecture proposal; no runtime enablement or production conformance claim is made by this document alone. |
 
 ---
 

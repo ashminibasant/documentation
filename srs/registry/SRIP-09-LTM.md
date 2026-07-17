@@ -33,10 +33,12 @@
 | Commercial Runtime Boundary | Relevant policy or explicit covenant for protected Sigma marks, official certification, managed deployment, white-label, resale, CC BY-NC commercial use, and patent commitments |
 | Information Class | Open |
 | Change Class | SRS-only |
+| Specification Class | Runtime Architecture Specification |
 | Normative Status | Defines a long-term memory and structural-coherence contract. It does not require a specific vector database, graph database, trace-ledger product, or cross-user memory authority. |
 | Conformance Level | Partial Conformance / Bounded Implementation |
 | SRD Synchronization Action | Deferred review |
-| Release Alignment Status | Active proposal with partial implementation; no full graph or trace-ledger production claim is made by this document alone. |
+| Release Alignment Status | aligned with deferred SRD sync |
+| Release Alignment Notes | Active proposal with partial implementation; no full graph or trace-ledger production claim is made by this document alone. |
 
 ---
 
@@ -90,7 +92,7 @@ SRIP-09 does not:
 - require verbatim storage of all user and assistant text;
 - require one specific vector database or graph database product;
 - replace short-term context management;
-- replace CMT compression topology;
+- replace SMC compression topology;
 - replace AEP equilibrium regulation;
 - authorize cross-user or cross-session memory sharing without governance;
 - require unfinished graph and trace-ledger extensions to be treated as
@@ -338,9 +340,9 @@ LTM-SC should attach phase state and phase transitions when available.
 AEP may use LTM-SC records for drift, convergence, or recovery analysis. LTM-SC
 does not replace AEP intervention logic.
 
-### 3. CMT
+### 3. SMC
 
-CMT may compress memory into higher-order topology. LTM-SC remains the base
+SMC may compress memory into higher-order topology. LTM-SC remains the base
 contract for semantic lineage and traceability.
 
 ### 4. RIS
@@ -413,7 +415,7 @@ Planned extensions include:
 - **SRIP-04** — Memory Layer Architecture
 - **SRIP-08** — Phase Vector Model and Runtime Telemetry
 - **SRIP-10** — Adaptive Entropy Protocol
-- **SRIP-11** — Compression and Memory Topology
+- **SRIP-11** — Structural Memory Compression (SMC)
 - **SRIP-13** — Relational Identity Stabilization
 
 ---
