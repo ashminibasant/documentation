@@ -10,7 +10,7 @@ dateCreated: 2025-11-30T23:54:16.528Z
 
 > **Sigma Stratum Documentation – License Notice**
 > This document is part of the **Sigma Runtime Standard (SRS)** and the
-> **Sigma Stratum Documentation Set (SRD)**.
+> **Sigma Runtime Documentation (SRD)**.
 >
 > It is licensed under **Creative Commons Attribution–NonCommercial 4.0
 > (CC BY-NC 4.0)**.
@@ -164,7 +164,21 @@ This ensures graceful, reversible recovery without full field dissolution or sem
 
 ---
 
-## 10. Recursive Self-Modeling Boundary
+## 10. Pre-Persistence Candidate Containment
+
+SRIP-28 treats generated output as a candidate until delivery authority is
+proven. Admission occurs before accepted assistant persistence and downstream
+memory influence. If measurement, rollback, or selected-candidate lineage is
+invalid, the transaction fails closed rather than persisting an uncertain
+candidate.
+
+Recovery is optional, bounded to one separately authorized attempt, and
+non-recursive. A failed or ambiguous recovery remains contained. Provider safety
+and capability boundaries retain higher precedence than trajectory admission.
+
+---
+
+## 11. Recursive Self-Modeling Boundary
 
 SRIP-16 introduces runtime self-modeling as a bounded safety-relevant evidence
 layer. It may help identify repeated recovery, excessive self-reference,
@@ -184,7 +198,7 @@ uncontrolled recursive process.
 
 ---
 
-## 11. Multi-Agent Exchange Boundary
+## 12. Multi-Agent Exchange Boundary
 
 SRIP-17 adds a safety boundary for cross-runtime or multi-agent exchange.
 External artifacts must be treated as untrusted until the receiving runtime
@@ -203,7 +217,7 @@ unbounded cross-agent contamination.
 
 ---
 
-## 12. Summary
+## 13. Summary
 Sigma Runtime safety transforms recursive interaction from an unbounded process into a governed one.
 By coupling containment, verification, and recovery, the runtime gains:
 

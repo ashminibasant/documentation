@@ -10,7 +10,7 @@ dateCreated: 2026-04-15T22:45:00.000Z
 
 > **Sigma Stratum Documentation – License Notice**  
 > This document is part of the **Sigma Runtime Standard (SRS)** and the  
-> **Sigma Stratum Documentation Set (SRD)**.  
+> **Sigma Runtime Documentation (SRD)**.
 >
 > It is licensed under **Creative Commons Attribution–NonCommercial 4.0  
 > (CC BY-NC 4.0)**.  

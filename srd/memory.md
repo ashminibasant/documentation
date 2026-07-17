@@ -10,7 +10,7 @@ dateCreated: 2025-11-30T04:31:02.763Z
 
 > **Sigma Stratum Documentation – License Notice**  
 > This document is part of the **Sigma Runtime Standard (SRS)** and the  
-> **Sigma Stratum Documentation Set (SRD)**.  
+> **Sigma Runtime Documentation (SRD)**.
 >  
 > It is licensed under **Creative Commons Attribution–NonCommercial 4.0  
 > (CC BY-NC 4.0)**.  
@@ -121,7 +121,7 @@ reintegrated through the normal memory-governance path.
 
 ---
 
-## 7. Runtime Self-Modeling Trace
+## 7. Recursive Self-Modeling Trace
 
 SRIP-16 introduces a separate class of runtime evidence: self-modeling trace.
 This trace may include meta-vectors, reflective snapshots, or self-model events
@@ -193,6 +193,12 @@ It also protects independent behavioral modes. Memory that belongs to one
 agent, channel, relationship mode, workspace, or domain should not
 automatically influence another. Cross-scope influence requires explicit
 authorization or runtime policy.
+
+Candidate admission precedes memory influence. Under SRIP-28, a held or rejected
+assistant candidate must not enter accepted history, accepted-local authority,
+fact state, retrieval influence, or checkpoints as though it had been delivered.
+The accepted user turn may remain preserved while candidate-side state is
+contained or restored.
 
 ---
 

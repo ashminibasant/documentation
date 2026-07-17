@@ -10,7 +10,7 @@ dateCreated: 2025-11-30T04:28:39.558Z
 
 > **Sigma Stratum Documentation – License Notice**
 > This document is part of the **Sigma Runtime Standard (SRS)** and the
-> **Sigma Stratum Documentation Set (SRD)**.
+> **Sigma Runtime Documentation (SRD)**.
 >
 > It is licensed under **Creative Commons Attribution–NonCommercial 4.0
 > (CC BY-NC 4.0)**.
@@ -80,7 +80,7 @@ The runtime consists of three interlinked layers:
    - **Mode And Phase Regulation:** narrows or reshapes runtime behavior under pressure
    - **Boundary And Recovery Controls:** supports rebinding, containment, and recovery instead of silent collapse
    - **Intent Handling:** keeps interaction behavior tied to user and system constraints
-   - **Runtime Self-Modeling (RSM):** records bounded meta-evidence about control posture, reflection pressure, and recent stability changes
+   - **Recursive Self-Modeling (RSM):** records bounded meta-evidence about control posture, reflection pressure, and recent stability changes
 
 3. **Memory Layer**
    Provides persistence beyond context windows:
@@ -115,6 +115,13 @@ The public architectural point is not a fixed list of internal flags.
 The point is that the runtime has an explicit control plane between raw model generation and persisted interaction state.
 
 SRIP-16 adds a bounded self-modeling surface to this control plane. In architectural terms, RSM does not grant the runtime authority to rewrite itself. It creates compact reflective evidence - such as meta-vectors, self-model events, and reflective snapshots - that the control layer can inspect when deciding whether to narrow, recover, perturb, or continue normally.
+
+SRIP-27 and SRIP-28 separate two additional control questions. TMC measures
+whether a generated candidate remains a member of the intended trajectory;
+TAL decides whether that candidate may be delivered and influence future state.
+Dynamic stability does not prove target membership, and provider generation does
+not grant persistence authority. Admission therefore remains a bounded,
+single-writer transaction before accepted assistant state is committed.
 
 ---
 

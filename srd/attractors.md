@@ -10,7 +10,7 @@ dateCreated: 2025-11-30T04:29:26.743Z
 
 > **Sigma Stratum Documentation – License Notice**  
 > This document is part of the **Sigma Runtime Standard (SRS)** and the  
-> **Sigma Stratum Documentation Set (SRD)**.  
+> **Sigma Runtime Documentation (SRD)**.
 >  
 > It is licensed under **Creative Commons Attribution–NonCommercial 4.0  
 > (CC BY-NC 4.0)**.  
@@ -103,6 +103,12 @@ They remain bounded by:
 
 This means Sigma Runtime does not simply reinforce every recurrent pattern.  
 It differentiates between helpful continuity and destabilizing persistence.
+
+Attractor stability and target membership are separate observations. A response
+can be dynamically coherent and still belong to the wrong attractor. SRIP-27
+names this target-relative question trajectory membership; a stable but displaced
+trajectory must remain representable rather than being reported as healthy
+solely because its local dynamics are smooth.
 
 ---
 

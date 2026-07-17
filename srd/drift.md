@@ -10,7 +10,7 @@ dateCreated: 2025-11-30T04:30:15.814Z
 
 > **Sigma Stratum Documentation – License Notice**  
 > This document is part of the **Sigma Runtime Standard (SRS)** and the  
-> **Sigma Stratum Documentation Set (SRD)**.  
+> **Sigma Runtime Documentation (SRD)**.
 >  
 > It is licensed under **Creative Commons Attribution–NonCommercial 4.0  
 > (CC BY-NC 4.0)**.  
@@ -109,6 +109,12 @@ As interaction continues, the runtime has to differentiate between:
 - and unstable interference between multiple active patterns.
 
 Publicly, one of the most important stabilization questions is whether a recurring pattern is still helping coherence or has started to destabilize it.
+
+Drift describes movement. It does not by itself prove that the field still
+belongs to the intended trajectory. SRIP-27 therefore keeps target membership
+separate from ALICE/AEP-style dynamic stability: `stable + collapsed` is a valid
+combined observation when the runtime has settled coherently into a competing
+attractor.
 
 ---
 

@@ -2,7 +2,7 @@
 title: SRIP Architecture Reading Order
 description: Conceptual reading-order view for Sigma Runtime Improvement Proposals across architecture stacks.
 published: true
-date: 2026-07-05T00:00:00.000Z
+date: 2026-07-17T00:00:00.000Z
 tags:
 editor: markdown
 dateCreated: 2026-05-14T00:00:00.000Z
@@ -10,7 +10,7 @@ dateCreated: 2026-05-14T00:00:00.000Z
 
 > **Sigma Stratum Documentation – License Notice**
 > This document is part of the **Sigma Runtime Standard (SRS)** and the
-> **Sigma Stratum Documentation Set (SRD)**.
+> **Sigma Runtime Documentation (SRD)**.
 >
 > It is licensed under **Creative Commons Attribution–NonCommercial 4.0
 > (CC BY-NC 4.0)**.
@@ -72,7 +72,7 @@ Use this path for long-running memory, retrieval, and recall behavior:
 
 1. [SRIP-04](srip-04.md) — Memory Layer Architecture
 2. [SRIP-09-LTM](registry/SRIP-09-LTM.md) — Long-Term Memory and Structural Coherence Layer
-3. [SRIP-11-CMT](registry/SRIP-11-CMT.md) — Compression and Memory Topology
+3. [SRIP-11-SMC](registry/SRIP-11-SMC.md) — Structural Memory Compression (legacy CMT redirect retained)
 4. [SRIP-14-RMI](registry/SRIP-14-RMI.md) — Retrieval and Memory Integration Layer
 5. [SRIP-26-MIL](registry/SRIP-26-MIL.md) — Memory Influence Layer, when remembered or retrieved material must be evaluated before it may steer behavior
 6. [SRIP-21-EIB](registry/SRIP-21-EIB.md) — External Identity Binding and Mode Reconciliation, when retrieved or recalled material describes one external entity through conflicting observed modes
@@ -99,6 +99,12 @@ This order is conceptual. It does not change the public SRIP numbers.
 
 Use this path for control, drift, stability, and response-shaping behavior:
 
+SRIP-20 and SRIP-22 are governance architecture drafts; SRIP-23 is a research
+architecture draft. Their position in this reading path describes conceptual
+dependencies, not implementation readiness. Consult
+[SRS Specification Classes](specification-classes.md) and the
+[SRIP Evidence Matrix](evidence-matrix.md) before making conformance claims.
+
 1. [SRIP-03](srip-03.md) — Drift Metrics and Stabilization Algorithms
 2. [SRIP-06](srip-06.md) — Safety and Recursion Boundaries
 3. [SRIP-07](srip-07.md) — Symbolic Density Layer
@@ -108,10 +114,12 @@ Use this path for control, drift, stability, and response-shaping behavior:
 7. [SRIP-21-EIB](registry/SRIP-21-EIB.md) — External Identity Binding and Mode Reconciliation, when identity/mode separation is needed before contradiction buffering
 8. [SRIP-15-ADP](registry/SRIP-15-ADP.md) — Attractor Dynamics and Controlled Perturbation Layer
 9. [SRIP-19-RCB](registry/SRIP-19-RCB.md) — Recursive Contradiction Buffering
-10. [SRIP-20-ANS](registry/SRIP-20-ANS.md) — Autonomy Negotiation and Boundary Stabilization
-11. [SRIP-22-GRC](registry/SRIP-22-GRC.md) — Governance Recursion and Collusion Boundary, when runtime control authority, certification, emergency override, or legitimacy state must be evaluated
-12. [SRIP-23-DGL](registry/SRIP-23-DGL.md) — Dialectical Generation Layer, when preserved contradiction and attractor tension may generate non-canonical semantic candidates without deleting the source contradiction
-13. [SRIP-16-RSM](registry/SRIP-16-RSM.md) — Recursive Self-Modeling
+10. [SRIP-27-TMC](registry/SRIP-27-TMC.md) — Trajectory Membership and Collapse Measurement, when dynamic stability must be separated from target-attractor membership
+11. [SRIP-28-TAL](registry/SRIP-28-TAL.md) — Trajectory Admission Loop, when measured candidates require pre-persistence delivery and influence authority
+12. [SRIP-20-ANS](registry/SRIP-20-ANS.md) — Autonomy Negotiation and Boundary Stabilization
+13. [SRIP-22-GRC](registry/SRIP-22-GRC.md) — Governance Recursion and Collusion Boundary, when runtime control authority, certification, emergency override, or legitimacy state must be evaluated
+14. [SRIP-23-DGL](registry/SRIP-23-DGL.md) — Dialectical Generation Layer, when preserved contradiction and attractor tension may generate non-canonical semantic candidates without deleting the source contradiction
+15. [SRIP-16-RSM](registry/SRIP-16-RSM.md) — Recursive Self-Modeling
 
 ---
 

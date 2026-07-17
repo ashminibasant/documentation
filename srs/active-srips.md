@@ -2,7 +2,7 @@
 title: Active SRIPs — Sigma Runtime Standard
 description: Public index of the active Sigma Runtime Improvement Proposal surface, including foundational SRIPs and later registry proposals.
 published: true
-date: 2026-06-27T00:00:00.000Z
+date: 2026-07-17T00:00:00.000Z
 tags:
 editor: markdown
 dateCreated: 2025-12-28T09:46:38.133Z
@@ -10,7 +10,7 @@ dateCreated: 2025-12-28T09:46:38.133Z
 
 > **Sigma Stratum Documentation – License Notice**
 > This document is part of the **Sigma Runtime Standard (SRS)** and the
-> **Sigma Stratum Documentation Set (SRD)**.
+> **Sigma Runtime Documentation (SRD)**.
 >
 > It is licensed under **Creative Commons Attribution–NonCommercial 4.0
 > (CC BY-NC 4.0)**.
@@ -39,6 +39,9 @@ References:
 - [SRS Public Specification License](/legal/srs-public-specification-license)
 - [Sigma IP, Licensing, and Certification Policy](/legal/ip-licensing-certification-policy)
 - [SRS Conformance](/srs/conformance/)
+- [SRS Metric Registry](/srs/metric-registry)
+- [SRS Specification Classes](/srs/specification-classes)
+- [SRIP Evidence Matrix](/srs/evidence-matrix)
 
 ---
 
@@ -66,7 +69,7 @@ Later proposals and extensions are tracked in the public registry:
 |------|--------|---------------|
 | [SRIP-09-LTM](/srs/registry/SRIP-09-LTM) | Long-Term Memory and Structural Coherence Layer | Consult document header |
 | [SRIP-10-AEP](/srs/registry/SRIP-10-AEP) | Adaptive Entropy Protocol | Consult document header |
-| [SRIP-11-CMT](/srs/registry/SRIP-11-CMT) | Compression & Memory Topology | Consult document header |
+| [SRIP-11-SMC](/srs/registry/SRIP-11-SMC) | Structural Memory Compression | Consult document header; legacy CMT redirect retained |
 | [SRIP-12-CDS](/srs/registry/SRIP-12-CDS) | Commerce Decision State Layer | Consult document header |
 | [SRIP-13-RIS](/srs/registry/SRIP-13-RIS) | Relational Identity Stabilization | Consult document header |
 | [SRIP-14-RMI](/srs/registry/SRIP-14-RMI) | Retrieval and Memory Integration Layer | Consult document header |
@@ -75,13 +78,15 @@ Later proposals and extensions are tracked in the public registry:
 | [SRIP-17-MAE](/srs/registry/SRIP-17-MAE) | Multi-Agent Exchange | Consult document header |
 | [SRIP-18-CSI](/srs/registry/SRIP-18-CSI) | Commerce Semantic Integration Layer | Consult document header |
 | [SRIP-19-RCB](/srs/registry/SRIP-19-RCB) | Recursive Contradiction Buffering | Consult document header |
-| [SRIP-20-ANS](/srs/registry/SRIP-20-ANS) | Autonomy Negotiation and Boundary Stabilization | Consult document header |
+| [SRIP-20-ANS](/srs/registry/SRIP-20-ANS) | Autonomy Negotiation and Boundary Stabilization | Governance Architecture Draft |
 | [SRIP-21-EIB](/srs/registry/SRIP-21-EIB) | External Identity Binding and Mode Reconciliation | Consult document header |
-| [SRIP-22-GRC](/srs/registry/SRIP-22-GRC) | Governance Recursion and Collusion Boundary | Consult document header |
-| [SRIP-23-DGL](/srs/registry/SRIP-23-DGL) | Dialectical Generation Layer | Consult document header |
+| [SRIP-22-GRC](/srs/registry/SRIP-22-GRC) | Governance Recursion and Collusion Boundary | Governance Architecture Draft |
+| [SRIP-23-DGL](/srs/registry/SRIP-23-DGL) | Dialectical Generation Layer | Research Architecture Draft |
 | [SRIP-24-EIL](/srs/registry/SRIP-24-EIL) | Environment Interface Layer | Consult document header |
 | [SRIP-25-IEM](/srs/registry/SRIP-25-IEM) | Interaction Event Model | Consult document header |
 | [SRIP-26-MIL](/srs/registry/SRIP-26-MIL) | Memory Influence Layer | Consult document header |
+| [SRIP-27-TMC](/srs/registry/SRIP-27-TMC) | Trajectory Membership and Collapse Measurement | Consult document header |
+| [SRIP-28-TAL](/srs/registry/SRIP-28-TAL) | Trajectory Admission Loop | Consult document header |
 
 Deprecated or superseded entries remain traceable through the registry as part of the public historical record.
 

@@ -10,7 +10,7 @@ dateCreated: 2025-11-30T04:27:27.179Z
 
 > **Sigma Stratum Documentation – License Notice**
 > This document is part of the **Sigma Runtime Standard (SRS)** and the
-> **Sigma Stratum Documentation Set (SRD)**.
+> **Sigma Runtime Documentation (SRD)**.
 >
 > It is licensed under **Creative Commons Attribution–NonCommercial 4.0
 > (CC BY-NC 4.0)**.
@@ -150,7 +150,7 @@ Together, these concepts explain how the runtime aims to remain coherent, interp
 > **Related Addendum:**
 > *From Cortical Attractors to Cognitive Fields*
 > (Deco & Rolls 2005 → Sigma Stratum 2025–2026)
-> [Read the full document →](/srd/Addendum_2026-02-10_Bridge_Deco_Rolls_Sigma_Stratum)
+> [Read the full document →](/srd/Addendum)
 ---
 
 > *References:*
