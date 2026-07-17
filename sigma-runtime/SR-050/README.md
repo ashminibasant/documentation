@@ -1,5 +1,10 @@
 # SIGMA Runtime v0.5.0 — PTR-500 Validation Suite
 
+> **Historical evidence notice (2026-07-17):** This package records conclusions
+> from the named v0.5.0 runs. It is not current SRS conformance evidence and does
+> not establish current production readiness or cross-provider invariance.
+> See [PUBLICATION-MANIFEST.md](PUBLICATION-MANIFEST.md).
+
 **Repository segment:** `/sigma-runtime/SR-050`  
 **Last update:** 2026-01-16  
 **Maintainer:** Sigma Stratum Research Group  
@@ -17,7 +22,8 @@ Two independent cognitive engines were tested:
 - **OpenAI GPT-5.2**
 
 Both operated under the **NOEMA resonant cognition profile**, within the SRIP-09/09c architectural stack (Long-Term Memory + Nucleus Integration).  
-The validation confirms cross-model invariance, terminological isometry, and zero structural drift across 500 reasoning cycles.
+The historical report records cross-model invariance, terminological isometry,
+and zero structural drift within its named runs and metric profile.
 
 ---
 

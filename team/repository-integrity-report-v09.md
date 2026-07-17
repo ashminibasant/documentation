@@ -10,7 +10,7 @@ dateCreated: 2025-12-01T00:04:01.418Z
 
 > **Sigma Stratum Documentation – License Notice**  
 > This document is part of the **Sigma Runtime Standard (SRS)** and the  
-> **Sigma Stratum Documentation Set (SRD)**.  
+> **Sigma Runtime Documentation (SRD)**.
 >  
 > It is licensed under **Creative Commons Attribution–NonCommercial 4.0  
 > (CC BY-NC 4.0)**.  
@@ -131,7 +131,9 @@ Governance, SRIP, and licensing layers are synchronized and current.
 
 - ✅ **File structure integrity:** 100% verified (no broken paths or orphaned files).  
 - ✅ **Link consistency:** all internal references functional.  
-- ✅ **License uniformity:** all Markdown documents contain standardized headers.  
+- ⚠️ **License inventory:** current publication packages use explicit document
+  or package-level license authority; remaining historical gaps are tracked in
+  the repository license remediation backlog.
 - ✅ **Attribution & DOI alignment:** all references valid and resolvable.  
 - ✅ **Safety architecture presence:** `srd/safety.md` added and integrated.  
 - ✅ **Governance and legal synchronization:** confirmed.  
@@ -142,7 +144,7 @@ Governance, SRIP, and licensing layers are synchronized and current.
 ## 10. Certification
 
 This repository is recognized as the **canonical public reference** for the  
-**Sigma Stratum Documentation Set (SRD v1.0)**  
+**Sigma Runtime Documentation (SRD v1.0)**
 and the **foundational Sigma Runtime Standard (SRS v1.0, normative SRIPs in development)**.
 
 Canonical release aligned with **Sigma Stratum Public Wiki (December 2025)**.

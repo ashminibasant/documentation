@@ -1,0 +1,7 @@
+# Inventory metadata license: CC BY 4.0
+# Listed artifacts use their explicit per-file license or package-default CC BY-NC 4.0.
+0154f07466cd06abf93196676d253d450924c1e0a9aead3795b869d1957214e4  ./EXECUTIVE_SUMMARY.md
+614494ce491454cd4a385f627f0a74a8a33e858fc7008f782d1968aff52e2afd  ./README.md
+da4657fb5a2dc17f6a2884860bcbc7f319cf908996dab66b61fd981a2f926d4f  ./SIGMA_Runtime_SR-EI-0412_Model_Agnostic_Validation.md
+d4c11705829f448c1cf63b712f571642c13274dff92cbedf0a08dbac26a41d93  ./sigma_dialogue_excerpt(sigma_test_2026-01-09-17-53-51_google_james).json
+1163541b2db7a1018230d95a52d9862150da1f76d4d13ea22e47d51287a3ad94  ./sigma_dialogue_excerpt(sigma_test_2026-01-09-18-19-20_google_fujiwara).json

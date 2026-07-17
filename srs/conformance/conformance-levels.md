@@ -8,6 +8,13 @@ editor: markdown
 dateCreated: 2026-05-23T00:00:00.000Z
 ---
 
+> **Sigma Runtime Standard - Public Specification Notice**
+>
+> Specification License: CC BY 4.0.
+> Independent implementation is permitted under the public SRS/SRIP terms.
+> Machine-readable artifacts: Apache License 2.0 where explicitly marked.
+> Proprietary Sigma Runtime assets and Sigma marks are not licensed by this document.
+
 # SRS Conformance Levels
 
 These levels define public conformance vocabulary for implementations that cite, align with, implement, self-declare against, or obtain official certification for the Sigma Runtime Standard.

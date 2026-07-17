@@ -1,4 +1,12 @@
 # SIGMA Runtime SR-EI-0412 — MODEL-AGNOSTIC IDENTITY VALIDATION
+
+> **Current status:** Historical research evidence. The conclusions in this
+> report are scoped to its named runs and historical metrics; they do not prove
+> current production readiness or current SRS conformance. See
+> [PUBLICATION-MANIFEST.md](PUBLICATION-MANIFEST.md).
+
+**Document License:** [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
+
 ## Cross-Model Identity Stabilization: Google Gemini-3 Deployment
 
 **Test Date:** January 9, 2026

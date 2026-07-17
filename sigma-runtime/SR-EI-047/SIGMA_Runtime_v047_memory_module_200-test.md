@@ -1,4 +1,12 @@
 # SIGMA v0.4.7 - COMPREHENSIVE MEMORY TEST REPORT
+
+> **Current status:** Historical research evidence. Any production-readiness
+> conclusion below applies only to the historical report and is not a current
+> release or SRS conformance claim. See
+> [PUBLICATION-MANIFEST.md](PUBLICATION-MANIFEST.md).
+
+**Document License:** [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
+
 ## 200-Cycle Cognitive Coherence & Memory Analysis
 
 **Test Date:** December 30, 2025  

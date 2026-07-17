@@ -1,6 +1,13 @@
 # SR-EI-0412: Model-Agnostic Identity Validation
 
-**Status:** ✅ Validated
+> **Historical evidence notice (2026-07-17):** Results below are scoped to the
+> named January 2026 runs and their historical evaluation criteria. They are not
+> current production-readiness or SRS conformance evidence. See
+> [PUBLICATION-MANIFEST.md](PUBLICATION-MANIFEST.md).
+
+**Document License:** [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
+
+**Status:** Historical validation record
 **Date:** January 9, 2026
 **Model:** Google Gemini-3-flash-preview
 **Cycles:** 220 (110 per identity)
@@ -17,7 +24,9 @@
 
 ## Summary
 
-This validation proves SIGMA Runtime can maintain distinct, stable identities across multiple model families (OpenAI GPT-5.2, Google Gemini-3) without fine-tuning.
+The historical report concluded that the tested runtime maintained distinct,
+stable identities across the named OpenAI GPT-5.2 and Google Gemini-3 runs
+without fine-tuning.
 
 ### Key Results
 
@@ -58,7 +67,7 @@ This validation proves SIGMA Runtime can maintain distinct, stable identities ac
 
 **Problem:** Gemini exhibited 80% "Sterile Attractor" (repetitive syntactic templates)
 
-**Solution:** [SRIP-10-ACE](https://github.com/sigmastratum/documentation/blob/7e343c0d39199ab88eead711abb097f4e0c21fff/srs/registry/srip-10-ace.md) Anti-Crystallization Equilibrium Model
+**Historical solution:** [SRIP-10-ACE](../../srs/registry/retired/SRIP-10-ACE.md) Anti-Crystallization Equilibrium Model, subsequently superseded by AEP
 - Real-time pattern detection
 - Dynamic constraint injection
 - 100% drift elimination
