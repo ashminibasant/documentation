@@ -17,7 +17,7 @@ dateCreated: 2026-05-14T00:00:00.000Z
 >
 > The license for this specific document is authoritative.
 > For the full framework, see
-> [`/legal/IP-Policy`](https://sigmastratum.org/legal/ip-policy).
+> [`/legal/IP-Policy`](https://github.com/sigmastratum/documentation/blob/main/legal/ip-policy.md).
 
 # SRIP Architecture Reading Order
 

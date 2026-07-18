@@ -17,7 +17,7 @@ dateCreated: 2025-12-28T09:46:38.133Z
 >
 > The license for this specific document is authoritative.
 > For the full framework, see
-> [`/legal/IP-Policy`](https://sigmastratum.org/legal/ip-policy).
+> [`/legal/IP-Policy`](https://github.com/sigmastratum/documentation/blob/main/legal/ip-policy.md).
 
 # Active SRIPs — Sigma Runtime Standard
 

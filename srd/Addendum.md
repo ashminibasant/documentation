@@ -13,7 +13,7 @@ dateCreated: 2026-02-10T09:18:50.685Z
 > It is licensed under **Creative Commons Attribution 4.0 (CC BY 4.0)**  
 > to ensure open academic access and citation compatibility.  
 >  
-> See `/legal/IP-Policy` for the full repository-wide licensing framework.
+> See [`/legal/ip-policy.md`](../legal/ip-policy.md) for the full repository-wide licensing framework.
 
 # From Strange Loops to Runtime Stabilization  
 ## Situating Sigma Stratum within the Attractor Tradition (1979–2025)

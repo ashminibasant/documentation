@@ -13,7 +13,7 @@ dateCreated: 2026-01-07T11:41:38.780Z
 > It is licensed under **Creative Commons Attribution–NonCommercial 4.0 (CC BY-NC 4.0)**.  
 >
 > The license for this specific document is authoritative.  
-> See `/legal/IP-Policy` for the full repository-wide licensing framework.
+> See [`/legal/ip-policy.md`](../../../legal/ip-policy.md) for the full repository-wide licensing framework.
 
 # SRIP-10 — ACE: Anti-Crystallization Equilibrium Model
 **Bidirectional Stability Control and Central Equilibrium Feedback in ALICE Cognitive Systems**

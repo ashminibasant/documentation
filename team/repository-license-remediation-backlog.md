@@ -1,8 +1,8 @@
 ---
 title: Repository License Authority Remediation Record
-description: Completed audit record for explicit per-document license authority across the public documentation repository.
+description: Completed repository-wide audit of explicit and hash-bound license authority across the public documentation repository.
 published: true
-date: 2026-07-17T00:00:00.000Z
+date: 2026-07-18T00:00:00.000Z
 tags:
 editor: markdown
 dateCreated: 2026-07-17T00:00:00.000Z
@@ -20,10 +20,14 @@ dateCreated: 2026-07-17T00:00:00.000Z
 | Field | Value |
 | --- | --- |
 | Status | `complete` |
-| Audit Date | 2026-07-17 |
-| Markdown Files Audited | 130 |
-| Explicit Per-Document Authorities | 130 |
+| Audit Date | 2026-07-18 |
+| Tracked Files Audited | 285 |
+| Markdown Files Audited | 137 |
+| Explicit Per-Document Authorities | 137 |
 | Package-Only Markdown Authorities | 0 |
+| Hash-Bound Package Inventories | 10 |
+| Hash-Bound Package Artifacts | 169 |
+| Explicit Standalone Machine Artifacts | 3 |
 | Open Remediation Items | 0 |
 | Push Status | Not pushed |
 
@@ -46,6 +50,30 @@ four relied only on the package default, while `PTR-500.md` also carried a
 compatible footer license. The affected `SR-050` and `SR-EI-0412` inventories
 were updated to their new content hashes.
 
+A second repository-wide pass then inspected every tracked extension rather
+than only `*.md`. It found 72 binary, structured-data, and extensionless
+artifacts without an unambiguous per-file or hash-bound authority after embedded
+PDF notices were considered. Seven publication manifests now bind every file in
+those scopes to immutable path-and-hash inventories. To avoid split authority,
+the new inventories cover all 84 existing non-Markdown artifacts in those
+scopes, including source files already covered by the repository source-code
+default and PDFs with embedded notices.
+
+The complete package-authority set is:
+
+| Scope | Covered Artifacts | Default Unmarked Artifact License |
+| --- | ---: | --- |
+| Root research and visual assets | 4 | `CC BY-NC 4.0` |
+| `runtime/` reference artifacts | 15 | `CC BY-NC 4.0` |
+| `sigma-runtime/SR-050/` | 52 | `CC BY-NC 4.0` |
+| `sigma-runtime/SR-052/` | 36 | `CC BY-NC 4.0` |
+| `sigma-runtime/SR-053/` | 20 | `CC BY-NC 4.0` |
+| `sigma-runtime/SR-EI-03/` | 8 | `CC BY-NC 4.0` |
+| `sigma-runtime/SR-EI-037/` | 23 | `CC BY-NC 4.0` |
+| `sigma-runtime/SR-EI-0412/` | 5 | `CC BY-NC 4.0` |
+| `sigma-runtime/SR-EI-046/` | 3 | `CC BY-NC 4.0` |
+| `sigma-runtime/SR-EI-047/` | 3 | `CC BY-NC 4.0` |
+
 ## License Disposition
 
 | Document Class | Files Updated | License |
@@ -54,6 +82,8 @@ were updated to their new content hashes.
 | Reusable public license template | 1 | `CC BY 4.0` |
 | Root and governance documentation | 2 | `CC BY-NC 4.0` |
 | Historical and reference research documents | 31 | `CC BY-NC 4.0` |
+| New publication manifests | 7 | `CC BY 4.0` |
+| New immutable inventories | 7 | `CC BY 4.0` metadata; package default for listed artifacts |
 
 The public-policy notices license document text only. They do not grant rights
 to Sigma marks, certification, patents, or proprietary runtime assets. Research
@@ -72,3 +102,6 @@ other artifacts.
   immutable path-and-hash inventory unambiguously covers them.
 - Any license change remains a content-owner and legal-review action rather than
   an automated inference.
+- A package manifest declares publication authority for listed artifacts; it
+  does not independently prove third-party chain-of-title or provider-output
+  rights outside the repository owner's publication decision.

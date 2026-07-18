@@ -3,6 +3,8 @@
 > This document is licensed under Creative Commons
 > Attribution-NonCommercial 4.0 International (`CC BY-NC 4.0`). Referenced
 > software and data with explicit terms retain those terms.
+>
+> Package authority and scope: [`PUBLICATION-MANIFEST.md`](PUBLICATION-MANIFEST.md).
 
 # SIGMA Runtime v0.3.5 — Emergent Stability Benchmark Report (James Identity)
 

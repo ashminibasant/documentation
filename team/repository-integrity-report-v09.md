@@ -22,6 +22,13 @@ dateCreated: 2025-12-01T00:04:01.418Z
 *Issued by the Sigma Stratum Research Group (SSRG)*  
 *Date: 1 December 2025*
 
+> **Publication audit addendum - 18 July 2026:** The December 2025 statements
+> below are historical. Current repository authority is the multi-license
+> `LICENSE`, the applicable per-file or hash-bound package authority, and the
+> [2026 publication manifest](../srs/publication-manifest-2026-07-17.md). The
+> addendum does not convert historical runtime evidence into current
+> conformance or production-readiness evidence.
+
 ---
 
 ## 1. Overview
@@ -58,10 +65,10 @@ and the **governance and legal framework** maintained by the
 | `README.md` | Top-level overview and navigation | ✅ |
 | `home.md` | Executive Summary of Sigma Stratum | ✅ |
 | `srd.md` | Sigma Runtime Documentation (overview) | ✅ |
-| `srs.md` | Sigma Runtime Standard (overview) | ✅ *(foundation only)* |
+| `srs.md` | Sigma Runtime Standard (overview) | ✅ *(29 canonical SRIP documents; maturity varies by document)* |
 | `legal.md` | Legal Framework Index | ✅ |
 | `team.md` | Governance Summary (SSRG) | ✅ |
-| `LICENSE` | CC BY-NC 4.0 License | ✅ |
+| `LICENSE` | Multi-license repository notice | ✅ |
 
 ---
 
@@ -89,8 +96,10 @@ and the **governance and legal framework** maintained by the
 | `/legal.md` | Central legal index linking all subdocuments | ✅ |
 | `/templates/LICENSE-HEADER.md` | Standard license header for all documents | ✅ |
 
-All materials are governed under **CC BY-NC 4.0**  
-and the **Sigma Stratum Open Standard Covenant**.
+Materials use the explicit license stated by the file or an immutable package
+manifest. Current authorities include `CC BY 4.0`, `CC BY-NC 4.0`, and
+`Apache-2.0` for explicitly marked machine-readable artifacts. Marks,
+certification, and proprietary runtime assets remain separately governed.
 
 ---
 
@@ -131,21 +140,23 @@ Governance, SRIP, and licensing layers are synchronized and current.
 
 - ✅ **File structure integrity:** 100% verified (no broken paths or orphaned files).  
 - ✅ **Link consistency:** all internal references functional.  
-- ✅ **License inventory:** all 130 Markdown documents carry explicit
-  per-document license authority; immutable non-Markdown evidence remains
-  covered by explicit package manifests and path-and-hash inventories.
+- ✅ **License inventory:** all 137 Markdown documents carry explicit
+  per-document license authority; all package-governed non-Markdown artifacts
+  are covered by 10 explicit manifests and path-and-hash inventories; the
+  remaining machine-readable artifacts carry explicit embedded authority.
 - ✅ **Attribution & DOI alignment:** all references valid and resolvable.  
 - ✅ **Safety architecture presence:** `srd/safety.md` added and integrated.  
 - ✅ **Governance and legal synchronization:** confirmed.  
-- ⚙️ **SRS layer:** foundation (SRIP-00) complete; SRIP-01–07 under standardization.
+- ⚙️ **SRS layer:** 29 canonical SRIP documents are registered; status,
+  specification class, and evidence disposition remain document-specific.
 
 ---
 
 ## 10. Certification
 
-This repository is recognized as the **canonical public reference** for the  
-**Sigma Runtime Documentation (SRD v1.0)**
-and the **foundational Sigma Runtime Standard (SRS v1.0, normative SRIPs in development)**.
+This repository is the **canonical public documentation reference** for the
+Sigma Runtime Documentation and public Sigma Runtime Standard corpus. This
+statement is repository authority, not implementation certification.
 
 Canonical release aligned with **Sigma Stratum Public Wiki (December 2025)**.
 
@@ -158,4 +169,5 @@ Canonical release aligned with **Sigma Stratum Public Wiki (December 2025)**.
 
 © 2025 **Sigma Stratum Research Group (SSRG)**  
 Licensed under **Creative Commons Attribution–NonCommercial 4.0 (CC BY-NC 4.0)**.  
-All rights reserved under the Sigma Stratum Open Standard Covenant.
+Other repository artifacts retain their own explicit licenses and policy
+boundaries.

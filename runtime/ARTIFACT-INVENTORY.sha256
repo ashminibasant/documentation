@@ -1,0 +1,17 @@
+# Inventory metadata license: CC BY 4.0
+# Listed artifacts use their explicit per-file license or package-default CC BY-NC 4.0.
+d288bd43c44fed7a5671b5e730170b3849dfe0b46e09778e1ad43abf778554e7  ./benchmarks/README.md
+009c38a71d56ac00bcdeddf2a7ab804888cd424b1003a0aef3f547eb98c02940  ./benchmarks/baseline_20251204-103258.json
+163e58145cb34c0422219e49abff79fa418e9c9c6f53941ad6803fee7615f8c9  ./benchmarks/baseline_runtime.py
+0b5fea47a9d6bdfe9eeb0e04a0921ecea138f70deb19d36c2323d02d4e8c6515  ./benchmarks/benchmark_report_v0.1_ERI-20251205-1.md
+ebdeecd89cf65be7e0b1a90c016181148250b739fc53c1dc74587e078cced4c9  ./benchmarks/benchmark_report_v01_ERI-20251205-1.md
+46a61b9cf6645207666424e1bbd536907c0291e77f26f3990d924421da54fee3  ./benchmarks/sigma_benchmark_20251205-1.png
+d3063fc9a148f81e2aa92fb2bfc6f9b2dea9cdd0c2cdf11df093f601947dd2c5  ./benchmarks/sigma_test_20251204-101319.json
+0d2c3a2396a82c54db770e2214e4d06ddaf5c2b2233e1263da652728ba309411  ./benchmarks/summary_20251204-225642.csv
+46ba4a1928fd13109692009b8713dd2d6fca7ec703653612f23795ceea817590  ./reference/README.md
+551003253af16b071037479671791bc11cf28d91eb16450992b756abdcc939cd  ./reference/Sigma Runtime - Extended Reference Implementation.py
+9c95549b0dbf19f754abd42072083472472958225be5213d02bba3e01bde74cf  ./reference/Sigma Runtime - Reference Implementation.py
+8cd7cfe63a763580dbfc96cd6452153065a6d32409aba95ecf7c7b3724b151fd  ./reference/sigma_runtime_extended_oai_ready.py
+677f5aa5b6b87a852c06ffc91be3bc6ebbe38aebbd52eab669695ff248e60985  ./tests/Sigma Runtime - Reference Implementation Stability Test (v0.1)
+984624bd8e4f093d43717645d08088aeb81ec78f8af22b1d64e306eda609e153  ./tests/THE FULL 200-TURN ATTRACTOR STABILITY TEST SCENARIO (v1.0).md
+4aac3bb7174a56176a3f002a81270692450fe0882d4d90ec022d80775b615f29  ./tests/sigma_test_20251204-095100.json

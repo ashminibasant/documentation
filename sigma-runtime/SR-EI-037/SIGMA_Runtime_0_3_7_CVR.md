@@ -3,6 +3,8 @@
 > This document is licensed under Creative Commons
 > Attribution-NonCommercial 4.0 International (`CC BY-NC 4.0`). Referenced
 > software and data with explicit terms retain those terms.
+>
+> Package authority and scope: [`PUBLICATION-MANIFEST.md`](PUBLICATION-MANIFEST.md).
 
 # SIGMA Runtime v0.3.7 — Comprehensive Validation Report
 ## Cognitive Attractor Architecture for LLM Identity Stabilization
@@ -564,10 +566,10 @@ This represents a paradigm shift from:
 All experimental data, logs, and analysis scripts are available in the SIGMA Runtime repository for independent verification and reuse.
 
 **Raw Data:**  
-[`/data/`](https://github.com/sigmastratum/sigma-runtime/SR-EI-037/data/) — structured JSON logs of all 550 test cycles across 5 runs, including token usage, latency, and stability metrics.
+[`/data/`](data/) — structured JSON logs of all 550 test cycles across 5 runs, including token usage, latency, and stability metrics.
 
 **Code:**  
-[`/code/`](https://github.com/sigmastratum/sigma-runtime/SR-EI-037/code/) — Python-based test harness and runtime controller used for SIGMA validation experiments.
+[`/code/`](code/) — Python-based test harness and runtime controller used for SIGMA validation experiments.
 
 **Reproducibility Statement:**  
 All experiments were executed using identical runtime configurations, identical prompts, and the same API tier (GPT-5.2 Web).  

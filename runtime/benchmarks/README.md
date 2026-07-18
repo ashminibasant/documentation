@@ -13,6 +13,8 @@ dateCreated: 2025-12-04T03:35:16.267Z
 > This document is licensed under Creative Commons
 > Attribution-NonCommercial 4.0 International (`CC BY-NC 4.0`). Referenced
 > software and data with explicit terms retain those terms.
+>
+> Package authority and scope: [`../PUBLICATION-MANIFEST.md`](../PUBLICATION-MANIFEST.md).
 
 # SIGMA Runtime Benchmark Plan (v0.1 ERI)
 

@@ -16,16 +16,21 @@ Two Creative Commons licenses are used across the corpus:
 2. CC BY 4.0 — Attribution  
    Applied to commercially-permissive publications.
 
-The specific license applicable to each document is listed:
-• at the top of the document itself  
+Machine-readable SRS artifacts may use Apache License 2.0 when that authority
+is explicitly embedded in the artifact.
+
+The specific license applicable to each artifact is listed:
+• at the top of the document or inside the machine-readable artifact
+• in a directory publication manifest with an immutable path-and-hash inventory
 • in the `/legal/` directory (IP Policy, License Overview)
 
-No document may be used under terms different from those listed for that document.
+No artifact may be used under terms different from those listed for that
+artifact.
 
 For attribution requirements, permitted uses, and restrictions,
 consult the authoritative IP Policy located at:
 
-    /legal/IP Policy
+    /legal/ip-policy.md
 
 ────────────────────────────────────────
 SOURCE CODE NOTICE

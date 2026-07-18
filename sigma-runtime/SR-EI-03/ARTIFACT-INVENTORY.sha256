@@ -1,0 +1,10 @@
+# Inventory metadata license: CC BY 4.0
+# Listed artifacts use their explicit per-file license or package-default CC BY-NC 4.0.
+39e3d336637eb0b8dcfa0378f7d204b9394985cc3aa502b862b0097d82756940  ./baseline_james_20251212-195509.json
+fb42a5ac2ea0064ea6ca2dab167aaeaa636d83b37bb0bf0c878061101c1d2bf2  ./benchmark_report_SR_v035.md
+143b751fc3f5d0e21154de5f0327d27e29cedb28572ab54024458e9ab985ef57  ./extended_benchmark_4o_james.py
+488fc635397ac02f12d91fcbf24f567c465ab9b06c335093188459915c1cf1cb  ./identity_james_01.txt
+9051fc79191f5f9b313b3d6990448e52fb707dec6345c69769faa42e8b1b7d61  ./report_james_20251212-195509.md
+845dfa30b9dfb0f4ec2b3d322f3af44afaf037007e2f5f3f0c9c76987979b086  ./sigma_james_20251212-195509.json
+86faae4947d1f9d943df802ec62900d498556a9e1c904e47fccc65f94081704b  ./sigma_runtime_v0_3_4o_james.py
+7b0f5832574cbd388b7a55b9a0d11e1b842e66bbb299c5b66d6752041defe888  ./test_scenario_200.md

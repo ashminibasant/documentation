@@ -76,14 +76,18 @@ Standard headers and reusable documentation templates.
 
 ## Licensing
 
-All materials are distributed under the **Sigma Stratum Open Standard Framework**,  
-using the following Creative Commons licenses:
+Materials are distributed under the **Sigma Stratum multi-license framework**:
 
 - **CC BY-NC 4.0** — Non-commercial license for conceptual and theoretical materials (SRD)  
 - **CC BY 4.0** — Attribution-only license for selected technical and educational materials  
+- **Apache 2.0** — Machine-readable SRS artifacts only where explicitly marked
 
-Each document includes its own license header.  
-See `/legal/license.md` and `/templates/LICENSE-HEADER.md` for full details.
+Documents include their own license header. Immutable binary, structured-data,
+and historical source artifacts may instead be governed by a directory
+publication manifest and path-and-hash inventory.
+See `/legal/license.md`, `/templates/LICENSE-HEADER.md`, and the
+[root asset publication manifest](PUBLICATION-ASSET-MANIFEST.md) for full
+details.
 
 ---
 

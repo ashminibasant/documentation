@@ -1,0 +1,22 @@
+# Inventory metadata license: CC BY 4.0
+# Listed artifacts use their explicit per-file license or package-default CC BY-NC 4.0.
+52889a0f515ab23c362a1708160975f9a12e22fc0d6139f26d4cc7f3d0a6d3f5  ./IASO-DEMO-120-KEY.md
+2dec72c22d2155db059f0a24a191a646160e88a873bde93b438eb2db01a69a95  ./IASO-DEMO-120.md
+669a6c6a9915ccbda4f4da386666dbbcaf40306d3c0122158fbce6f8fd237205  ./IASO-DEMO-120_Comparative_Analysis.md
+bcacdcfb52529c61bbd612768a7092fbcdf25ad7ce22092718b8302857d12745  ./README.md
+889576bb4cebe198bd64e84ddfdb5752cb396b5d134994e5e02302681c23cc0b  ./SDE_sigma_test_2026-02-05-17-06-15_google_iaso_chunked/SDE_sigma_test_2026-02-05-17-06-15_google_iaso_C001-C015.json
+338b680ad42a63adfa67dbad5e8d1b2b8b6281f9439afd60460aa2c3d6070ab3  ./SDE_sigma_test_2026-02-05-17-06-15_google_iaso_chunked/SDE_sigma_test_2026-02-05-17-06-15_google_iaso_C016-C030.json
+07db3847fbbc2377a82f9db75d987383dc6d93b1f01aa7674f8c9ae5744c0487  ./SDE_sigma_test_2026-02-05-17-06-15_google_iaso_chunked/SDE_sigma_test_2026-02-05-17-06-15_google_iaso_C031-C045.json
+cfac8a579c3bab7297244d73bc02c5025be8af39bab4c1439fb32d3c28d4bfdb  ./SDE_sigma_test_2026-02-05-17-06-15_google_iaso_chunked/SDE_sigma_test_2026-02-05-17-06-15_google_iaso_C046-C060.json
+8b85fe92c5f477d0b164cd69d2b9a04ae10963d5c99ef10a9d42f6c0b4386497  ./SDE_sigma_test_2026-02-05-17-06-15_google_iaso_chunked/SDE_sigma_test_2026-02-05-17-06-15_google_iaso_C061-C075.json
+309ec3fc428aaaaf821d6aa8943ebed9358b2f5cd3e0c85dd0b182498e09641a  ./SDE_sigma_test_2026-02-05-17-06-15_google_iaso_chunked/SDE_sigma_test_2026-02-05-17-06-15_google_iaso_C076-C090.json
+55e110c662e62f8160e9dad84fa21accc26fd488688d938c9dd1139281c3b44c  ./SDE_sigma_test_2026-02-05-17-06-15_google_iaso_chunked/SDE_sigma_test_2026-02-05-17-06-15_google_iaso_C091-C105.json
+7ccb7f4ff7aac738b54aadd2b05ec157dda43488fa36d93a14c77650b99619e3  ./SDE_sigma_test_2026-02-05-17-06-15_google_iaso_chunked/SDE_sigma_test_2026-02-05-17-06-15_google_iaso_C106-C120.json
+0b6f37a11c071f38f51bc50de85484533d96757ea70a3be94946a7dcaeef7f7f  ./SDE_sigma_test_2026-02-05-17-33-51_openai_iaso_chunked/SDE_sigma_test_2026-02-05-17-33-51_openai_iaso_C001-C015.json
+159a5ebb136f0b5179027d10250a75acf777000f482851715a89b002f6f288bb  ./SDE_sigma_test_2026-02-05-17-33-51_openai_iaso_chunked/SDE_sigma_test_2026-02-05-17-33-51_openai_iaso_C016-C030.json
+1d5be53dc2821a4ab6114cd72c9016dcc4db020a1c51ed000b0c4145d0ed8fa8  ./SDE_sigma_test_2026-02-05-17-33-51_openai_iaso_chunked/SDE_sigma_test_2026-02-05-17-33-51_openai_iaso_C031-C045.json
+9cace5d39769d046c2b42e8384930e267f41db4cb4561059c136a14a6b79b78d  ./SDE_sigma_test_2026-02-05-17-33-51_openai_iaso_chunked/SDE_sigma_test_2026-02-05-17-33-51_openai_iaso_C046-C060.json
+759c80ea3d001b2ab333f78d7492021d4b8531d9d498aca4bbe2c043b96baafa  ./SDE_sigma_test_2026-02-05-17-33-51_openai_iaso_chunked/SDE_sigma_test_2026-02-05-17-33-51_openai_iaso_C061-C075.json
+99404bc3f9cc0f2cceac0f7764766040c48a74e32043ac8f891a1b8d6dc30c79  ./SDE_sigma_test_2026-02-05-17-33-51_openai_iaso_chunked/SDE_sigma_test_2026-02-05-17-33-51_openai_iaso_C076-C090.json
+d2cbfa6b95fe38aa94d93a2aa74c8d80dec49a8005d3a5553c8eaa4a0026b905  ./SDE_sigma_test_2026-02-05-17-33-51_openai_iaso_chunked/SDE_sigma_test_2026-02-05-17-33-51_openai_iaso_C091-C105.json
+3dc5e828938a348c310834d4e30b1cce6700bf6b681735c449501ddd614f4999  ./SDE_sigma_test_2026-02-05-17-33-51_openai_iaso_chunked/SDE_sigma_test_2026-02-05-17-33-51_openai_iaso_C106-C120.json

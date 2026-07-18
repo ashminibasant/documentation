@@ -60,7 +60,7 @@ Governance ensures that all changes to the **Sigma Runtime Standard (SRS)** and 
 - **Transparency:** All decisions and reviews occur through public repositories and open discussions.  
 - **Meritocracy:** Influence is earned through consistent, high-quality contributions.  
 - **Accountability:** Each SRIP and document change is traceable through version control and DOI records.  
-- **Integrity:** All materials adhere to the Sigma Stratum Open Standard Covenant and licensing framework.  
+- **Integrity:** All materials adhere to the applicable per-file or package license and the current Sigma Stratum policy framework.
 
 ### Repository Control Boundary
 

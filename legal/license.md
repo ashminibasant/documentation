@@ -86,7 +86,7 @@ Citation of Sigma Stratum, SRS, or SRIP is source attribution, not official conf
 
 | Layer | Examples | License / Policy |
 |---|---|---|
-| SRS/SRIP public specification | SRIP-00..SRIP-19 normative text | CC BY 4.0 + Independent Implementation Safe Harbor |
+| SRS/SRIP public specification | Canonical SRIP-00 through SRIP-28 public specification prose | CC BY 4.0 + Independent Implementation Safe Harbor |
 | Machine-readable SRS artifacts | schemas, validators, examples, conformance fixtures | Apache 2.0 where marked |
 | Research corpus | papers, whitepapers, methodology documents | Per-document license |
 | NC protected corpus | ∿ Phenomenon, SIGMA Runtime Architecture v0.1, protected-origin documents | CC BY-NC 4.0 unless otherwise stated |

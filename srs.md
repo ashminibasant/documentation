@@ -13,8 +13,8 @@ dateCreated: 2025-11-30T04:34:47.157Z
 > This document is part of the **Sigma Runtime Standard (SRS)**  
 > and is licensed under **Creative Commons Attribution–NonCommercial 4.0 (CC BY-NC 4.0)**.
 >
-> The repository-wide MIT license does **not** apply to this document.  
-> See `/SRS/LICENSE.md` for full terms.
+> Canonical SRIP normative prose carries its own public-specification license.
+> See [`/legal/license.md`](legal/license.md) and the applicable SRIP header.
 
 # Sigma Runtime Standard (SRS)
 *Public normative layer for Sigma Runtime*
