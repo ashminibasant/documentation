@@ -38,8 +38,9 @@ bindings, private prompts, or secrets.
 ## Logical Commit Inventory
 
 The commit refs below are the immutable exact file inventories for the first
-five package components. The final artifact-authority repair is identified by
-the commit containing this manifest; this avoids a self-referential commit hash.
+six package components. The repaired architecture-synthesis integration is
+identified by the merge commit containing this manifest; this avoids a
+self-referential commit hash while retaining source commit ancestry.
 
 | Order | Commit | Files | Scope | License Authority |
 | --- | --- | ---: | --- | --- |
@@ -48,7 +49,8 @@ the commit containing this manifest; this avoids a self-referential commit hash.
 | 3 | `8984c97` | 22 | SRIP-27 TMC, SRIP-28 TAL, registry/reading-order, SRD and governance synchronization | Explicit per-file `CC BY 4.0` or `CC BY-NC 4.0` notice |
 | 4 | `4b44ed6` | 20 | Open historical evidence licensing, conformance navigation, evidence matrix, integrity correction, license audit record, and publication manifests | Explicit per-file notice or immutable package manifest authority |
 | 5 | `9b6f8f4` | 48 | Repository-wide explicit Markdown license closure and affected inventory hashes | Public policy/template text `CC BY 4.0`; documentation and historical/reference research `CC BY-NC 4.0` |
-| 6 | Containing commit | Repository tree | Repository-wide non-Markdown authority, legal consistency, and link repair | Manifest metadata `CC BY 4.0`; unmarked historical/reference artifacts `CC BY-NC 4.0` |
+| 6 | `df50e66` | 49 | Repository-wide non-Markdown authority, legal consistency, and link repair | Manifest metadata `CC BY 4.0`; unmarked historical/reference artifacts `CC BY-NC 4.0` |
+| 7 | Containing merge commit | 11 | Repaired SRIP architecture synthesis, dependency graph/audit, control precedence, reading-order integration, and repository-count synchronization | Five integration documents `CC BY 4.0`; two YAML review artifacts `Apache-2.0`; existing records retain their explicit licenses |
 
 ## Component File And License Inventory
 
@@ -74,6 +76,29 @@ are isolated in a non-normative reference profile.
 Commit `8984c97` is the exact 22-file inventory. SRS/SRIP normative documents use
 their explicit `CC BY 4.0` notices. SRD and governance documents retain their
 explicit `CC BY-NC 4.0` notices. This component does not relicense either class.
+
+### Repaired Architecture Synthesis
+
+The seventh component integrates the architecture review lineage from
+`git:9ee173584c41d779401d1dba5488d86179c46281`, authored by Volodymyr
+Riabinskyi, while preserving the current canonical SRIP authority.
+
+It contains:
+
+- `srs/srip-architecture-synthesis.md`;
+- `srs/srip-control-precedence.md`;
+- `srs/srip-relationship-matrix.md`;
+- `srs/srip-relationship-audit.md`;
+- `srs/srip-architecture-diagrams.md`;
+- `srs/srip-dependency-graph.yaml`;
+- `srs/srip-dependency-reviews.yaml`;
+- synchronization changes to the reading order and publication/license audit
+  records.
+
+The repaired graph separates all 98 canonical `Parent Specs` edges from a
+selected non-normative integration overlay. It retains SRIP-06 as an ADP safety
+constraint rather than silently changing SRIP-15 parent metadata, uses SMC as
+the canonical SRIP-11 name, and includes SRIP-27 TMC and SRIP-28 TAL.
 
 ### Historical Evidence And Conformance
 
@@ -126,10 +151,10 @@ component contains 48 files.
 
 The strict final inventory after artifact-authority repair is:
 
-- 285 tracked files audited;
-- 137 Markdown files with explicit per-document license authorities;
+- 292 tracked files audited;
+- 142 Markdown files with explicit per-document license authorities;
 - 10 path-and-hash package inventories covering 169 artifacts;
-- 3 standalone machine-readable artifacts with embedded license authority;
+- 5 standalone machine-readable artifacts with embedded license authority;
 - 0 Markdown files relying only on package defaults;
 - 0 open license-remediation items.
 
@@ -140,12 +165,14 @@ the final commit:
 
 - telemetry positive vectors pass and every declared negative vector fails;
 - the canonical registry contains 29 unique SRIP IDs with complete metadata;
+- the architecture graph contains 29 nodes and exactly matches all 98 declared
+  canonical parent edges;
 - local Markdown links resolve after URL decoding;
 - all 10 artifact inventories pass SHA-256 verification;
 - the public tree contains no proprietary information-class declaration for
   the historical and reference packages in this manifest;
 - no deleted checker or GitHub Actions workflow is referenced;
-- all 137 Markdown files have explicit per-document license authority;
+- all 142 Markdown files have explicit per-document license authority;
 - no private filesystem path, session/agent identifier, prompt, or secret is
   introduced by this publication diff;
 - `git diff --check` passes;

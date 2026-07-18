@@ -21,13 +21,13 @@ dateCreated: 2026-07-17T00:00:00.000Z
 | --- | --- |
 | Status | `complete` |
 | Audit Date | 2026-07-18 |
-| Tracked Files Audited | 285 |
-| Markdown Files Audited | 137 |
-| Explicit Per-Document Authorities | 137 |
+| Tracked Files Audited | 292 |
+| Markdown Files Audited | 142 |
+| Explicit Per-Document Authorities | 142 |
 | Package-Only Markdown Authorities | 0 |
 | Hash-Bound Package Inventories | 10 |
 | Hash-Bound Package Artifacts | 169 |
-| Explicit Standalone Machine Artifacts | 3 |
+| Explicit Standalone Machine Artifacts | 5 |
 | Open Remediation Items | 0 |
 | Push Status | Not pushed |
 
@@ -74,6 +74,11 @@ The complete package-authority set is:
 | `sigma-runtime/SR-EI-046/` | 3 | `CC BY-NC 4.0` |
 | `sigma-runtime/SR-EI-047/` | 3 | `CC BY-NC 4.0` |
 
+The repaired SRIP architecture synthesis adds five non-normative public
+integration documents under explicit `CC BY 4.0` notices and two
+machine-readable YAML review artifacts under explicit `Apache-2.0` authority.
+They are self-licensed and do not rely on a package default or hash inventory.
+
 ## License Disposition
 
 | Document Class | Files Updated | License |
@@ -84,6 +89,8 @@ The complete package-authority set is:
 | Historical and reference research documents | 31 | `CC BY-NC 4.0` |
 | New publication manifests | 7 | `CC BY 4.0` |
 | New immutable inventories | 7 | `CC BY 4.0` metadata; package default for listed artifacts |
+| Public architecture integration reviews | 5 | `CC BY 4.0` |
+| Machine-readable architecture review artifacts | 2 | `Apache-2.0` |
 
 The public-policy notices license document text only. They do not grant rights
 to Sigma marks, certification, patents, or proprietary runtime assets. Research

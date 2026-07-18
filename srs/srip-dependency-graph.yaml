@@ -1,0 +1,188 @@
+schema_version: "0.2-review"
+status: non-normative-review-draft
+date: "2026-07-17"
+license: Apache-2.0
+information_class: Open
+authority:
+  registry: srs/registry.md
+  reading_order: srs/architecture-reading-order.md
+  note: Individual SRIP documents remain authoritative.
+
+coverage:
+  node_range: SRIP-00..SRIP-28
+  canonical_parent_edges: complete_for_declared_parent_specs
+  integration_edges: selected_non_exhaustive_review_overlay
+
+relationship_types:
+  - depends_on
+  - extends
+  - specializes
+  - constrains
+  - provides_evidence_to
+  - governs
+  - feeds
+  - recovers
+  - related_to
+  - amends
+  - supersedes
+
+nodes:
+  - {id: SRIP-00, title: Foundations and Scope, layer: foundational}
+  - {id: SRIP-01, title: Canonical Runtime Loop, layer: runtime}
+  - {id: SRIP-02, title: Attractor State Model, layer: runtime-state}
+  - {id: SRIP-03, title: Drift Metrics and Stabilization, layer: stability}
+  - {id: SRIP-04, title: Memory Layer Architecture, layer: memory}
+  - {id: SRIP-05, title: Interoperability Interface, layer: interoperability}
+  - {id: SRIP-06, title: Safety and Recursion Boundaries, layer: safety}
+  - {id: SRIP-07, title: Symbolic Density Layer, layer: semantics}
+  - {id: SRIP-08, title: Phase Vector Model and PRM, layer: control-telemetry}
+  - {id: SRIP-09, title: Long-Term Memory and Structural Coherence, layer: memory}
+  - {id: SRIP-10, title: Adaptive Entropy Protocol, layer: runtime-control}
+  - {id: SRIP-11, title: Structural Memory Compression, layer: memory}
+  - {id: SRIP-12, title: Commerce Decision State, layer: commerce}
+  - {id: SRIP-13, title: Relational Identity Stabilization, layer: identity-safety}
+  - {id: SRIP-14, title: Retrieval and Memory Integration, layer: memory-retrieval}
+  - {id: SRIP-15, title: Attractor Dynamics and Controlled Perturbation, layer: runtime-control}
+  - {id: SRIP-16, title: Recursive Self-Modeling, layer: meta-observability}
+  - {id: SRIP-17, title: Multi-Agent Exchange, layer: interoperability}
+  - {id: SRIP-18, title: Commerce Semantic Integration, layer: commerce}
+  - {id: SRIP-19, title: Recursive Contradiction Buffering, layer: runtime-control}
+  - {id: SRIP-20, title: Autonomy Negotiation and Boundary Stabilization, layer: autonomy}
+  - {id: SRIP-21, title: External Identity Binding and Mode Reconciliation, layer: identity}
+  - {id: SRIP-22, title: Governance Recursion and Collusion Boundary, layer: governance}
+  - {id: SRIP-23, title: Dialectical Generation Layer, layer: semantic-evolution}
+  - {id: SRIP-24, title: Environment Interface Layer, layer: environment}
+  - {id: SRIP-25, title: Interaction Event Model, layer: event-semantics}
+  - {id: SRIP-26, title: Memory Influence Layer, layer: memory-governance}
+  - {id: SRIP-27, title: Trajectory Membership and Collapse Measurement, layer: trajectory-measurement}
+  - {id: SRIP-28, title: Trajectory Admission Loop, layer: candidate-admission}
+
+# Exhaustive for Parent Specs declared by SRIP-00..28 on the review date.
+# More specific architectural verbs belong in integration_edges.
+canonical_parent_edges:
+  - {from: SRIP-01, to: SRIP-00}
+  - {from: SRIP-02, to: SRIP-00}
+  - {from: SRIP-02, to: SRIP-01}
+  - {from: SRIP-03, to: SRIP-00}
+  - {from: SRIP-03, to: SRIP-02}
+  - {from: SRIP-04, to: SRIP-02}
+  - {from: SRIP-04, to: SRIP-03}
+  - {from: SRIP-05, to: SRIP-02}
+  - {from: SRIP-05, to: SRIP-03}
+  - {from: SRIP-05, to: SRIP-04}
+  - {from: SRIP-05, to: SRIP-06}
+  - {from: SRIP-06, to: SRIP-00}
+  - {from: SRIP-06, to: SRIP-03}
+  - {from: SRIP-07, to: SRIP-02}
+  - {from: SRIP-07, to: SRIP-03}
+  - {from: SRIP-08, to: SRIP-03}
+  - {from: SRIP-08, to: SRIP-05}
+  - {from: SRIP-08, to: SRIP-06}
+  - {from: SRIP-09, to: SRIP-04}
+  - {from: SRIP-10, to: SRIP-03}
+  - {from: SRIP-10, to: SRIP-04}
+  - {from: SRIP-10, to: SRIP-06}
+  - {from: SRIP-10, to: SRIP-08}
+  - {from: SRIP-11, to: SRIP-09}
+  - {from: SRIP-11, to: SRIP-10}
+  - {from: SRIP-12, to: SRIP-09}
+  - {from: SRIP-12, to: SRIP-10}
+  - {from: SRIP-12, to: SRIP-11}
+  - {from: SRIP-13, to: SRIP-04}
+  - {from: SRIP-13, to: SRIP-06}
+  - {from: SRIP-13, to: SRIP-08}
+  - {from: SRIP-14, to: SRIP-09}
+  - {from: SRIP-14, to: SRIP-11}
+  - {from: SRIP-15, to: SRIP-01}
+  - {from: SRIP-15, to: SRIP-03}
+  - {from: SRIP-15, to: SRIP-07}
+  - {from: SRIP-16, to: SRIP-03}
+  - {from: SRIP-16, to: SRIP-06}
+  - {from: SRIP-16, to: SRIP-08}
+  - {from: SRIP-16, to: SRIP-09}
+  - {from: SRIP-16, to: SRIP-10}
+  - {from: SRIP-16, to: SRIP-11}
+  - {from: SRIP-17, to: SRIP-03}
+  - {from: SRIP-17, to: SRIP-05}
+  - {from: SRIP-17, to: SRIP-06}
+  - {from: SRIP-17, to: SRIP-08}
+  - {from: SRIP-17, to: SRIP-09}
+  - {from: SRIP-17, to: SRIP-10}
+  - {from: SRIP-17, to: SRIP-11}
+  - {from: SRIP-18, to: SRIP-09}
+  - {from: SRIP-18, to: SRIP-11}
+  - {from: SRIP-18, to: SRIP-14}
+  - {from: SRIP-19, to: SRIP-03}
+  - {from: SRIP-19, to: SRIP-06}
+  - {from: SRIP-19, to: SRIP-09}
+  - {from: SRIP-19, to: SRIP-13}
+  - {from: SRIP-19, to: SRIP-17}
+  - {from: SRIP-20, to: SRIP-06}
+  - {from: SRIP-20, to: SRIP-09}
+  - {from: SRIP-20, to: SRIP-13}
+  - {from: SRIP-20, to: SRIP-17}
+  - {from: SRIP-20, to: SRIP-19}
+  - {from: SRIP-21, to: SRIP-09}
+  - {from: SRIP-21, to: SRIP-13}
+  - {from: SRIP-21, to: SRIP-14}
+  - {from: SRIP-21, to: SRIP-19}
+  - {from: SRIP-22, to: SRIP-05}
+  - {from: SRIP-22, to: SRIP-06}
+  - {from: SRIP-22, to: SRIP-09}
+  - {from: SRIP-22, to: SRIP-13}
+  - {from: SRIP-22, to: SRIP-17}
+  - {from: SRIP-22, to: SRIP-19}
+  - {from: SRIP-22, to: SRIP-20}
+  - {from: SRIP-23, to: SRIP-15}
+  - {from: SRIP-23, to: SRIP-19}
+  - {from: SRIP-23, to: SRIP-22}
+  - {from: SRIP-24, to: SRIP-05}
+  - {from: SRIP-24, to: SRIP-14}
+  - {from: SRIP-24, to: SRIP-21}
+  - {from: SRIP-24, to: SRIP-22}
+  - {from: SRIP-25, to: SRIP-05}
+  - {from: SRIP-25, to: SRIP-22}
+  - {from: SRIP-25, to: SRIP-24}
+  - {from: SRIP-26, to: SRIP-04}
+  - {from: SRIP-26, to: SRIP-09}
+  - {from: SRIP-26, to: SRIP-14}
+  - {from: SRIP-26, to: SRIP-21}
+  - {from: SRIP-26, to: SRIP-24}
+  - {from: SRIP-26, to: SRIP-25}
+  - {from: SRIP-27, to: SRIP-02}
+  - {from: SRIP-27, to: SRIP-03}
+  - {from: SRIP-27, to: SRIP-08}
+  - {from: SRIP-27, to: SRIP-10}
+  - {from: SRIP-27, to: SRIP-15}
+  - {from: SRIP-28, to: SRIP-10}
+  - {from: SRIP-28, to: SRIP-15}
+  - {from: SRIP-28, to: SRIP-19}
+  - {from: SRIP-28, to: SRIP-27}
+
+# Selected control/data-flow interpretations, separate from canonical metadata.
+integration_edges:
+  - {from: SRIP-03, to: SRIP-02, type: provides_evidence_to, review: confirmed}
+  - {from: SRIP-06, to: SRIP-01, type: constrains, review: confirmed}
+  - {from: SRIP-10, to: SRIP-07, type: related_to, review: inferred}
+  - {from: SRIP-06, to: SRIP-15, type: constrains, review: confirmed}
+  - {from: SRIP-12, to: SRIP-18, type: governs, review: confirmed}
+  - {from: SRIP-19, to: SRIP-03, type: recovers, review: confirmed}
+  - {from: SRIP-20, to: SRIP-16, type: governs, review: confirmed}
+  - {from: SRIP-20, to: SRIP-17, type: constrains, review: confirmed}
+  - {from: SRIP-21, to: SRIP-14, type: constrains, review: confirmed}
+  - {from: SRIP-21, to: SRIP-19, type: feeds, review: confirmed}
+  - {from: SRIP-22, to: SRIP-17, type: constrains, review: confirmed}
+  - {from: SRIP-22, to: SRIP-20, type: governs, review: confirmed}
+  - {from: SRIP-22, to: SRIP-23, type: governs, review: confirmed}
+  - {from: SRIP-22, to: SRIP-24, type: constrains, review: confirmed}
+  - {from: SRIP-22, to: SRIP-25, type: constrains, review: confirmed}
+  - {from: SRIP-26, to: SRIP-20, type: feeds, review: inferred}
+  - {from: SRIP-27, to: SRIP-28, type: provides_evidence_to, review: confirmed}
+  - {from: SRIP-28, to: SRIP-23, type: governs, review: confirmed}
+  - {from: SRIP-28, to: SRIP-26, type: feeds, review: confirmed}
+
+review_notes:
+  - Canonical parent edges are complete for metadata available on 2026-07-17.
+  - Integration edges are selected interpretations, not a complete control-flow graph.
+  - No amends or supersedes edge is asserted.
+  - SRIP-27 measures candidate membership; SRIP-28 owns pre-persistence admission.

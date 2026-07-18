@@ -179,6 +179,14 @@ This sequence does not imply certification or production implementation. It is a
 
 SRIPs may be reviewed as architecture design artifacts when they define boundaries, contracts, conformance expectations, risks, non-goals, lifecycle state, and acceptance criteria.
 
+The current non-normative integration review is available through:
+
+- [SRIP Architecture Synthesis](srip-architecture-synthesis.md);
+- [SRIP Relationship Matrix](srip-relationship-matrix.md);
+- [SRIP Control Precedence Review](srip-control-precedence.md);
+- [SRIP Architecture Diagrams](srip-architecture-diagrams.md);
+- [SRIP Relationship Evidence Audit](srip-relationship-audit.md).
+
 TOGAF and similar enterprise architecture frameworks may be used as non-normative review lenses. They are not required dependencies for writing, citing, or implementing SRIPs.
 
 The Sigma Runtime Standard remains open-standard-first and framework-independent.

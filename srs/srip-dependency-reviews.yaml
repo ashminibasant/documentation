@@ -1,0 +1,36 @@
+schema_version: "0.2-review"
+status: non-normative-review-draft
+date: "2026-07-17"
+license: Apache-2.0
+information_class: Open
+graph: srs/srip-dependency-graph.yaml
+audit: srs/srip-relationship-audit.md
+
+canonical_parent_review:
+  policy: exact_match_to_declared_parent_specs
+  status: confirmed
+  edge_count: 98
+  note: Canonical parent edges do not infer a more specific architectural verb.
+
+integration_reviews:
+  - ["SRIP-03|provides_evidence_to|SRIP-02", confirmed, high, "SRIP-03 drift model observes attractor state"]
+  - ["SRIP-06|constrains|SRIP-01", confirmed, high, "SRIP-06 safe-mode and runtime-boundary scope"]
+  - ["SRIP-10|related_to|SRIP-07", inferred, medium, "Density and entropy coupling is conceptual, not a declared dependency"]
+  - ["SRIP-06|constrains|SRIP-15", confirmed, high, "SRIP-15 normative scope and Control Precedence"]
+  - ["SRIP-12|governs|SRIP-18", confirmed, high, "SRIP-18 preserves CDS deterministic decision authority"]
+  - ["SRIP-19|recovers|SRIP-03", confirmed, high, "RCB responds to unstable or unresolved trajectory state"]
+  - ["SRIP-20|governs|SRIP-16", confirmed, high, "RSM evidence cannot authorize its own expansion"]
+  - ["SRIP-20|constrains|SRIP-17", confirmed, high, "ANS bounds exchanged influence and delegation"]
+  - ["SRIP-21|constrains|SRIP-14", confirmed, high, "EIB mode and source authority constrain retrieval interpretation"]
+  - ["SRIP-21|feeds|SRIP-19", confirmed, high, "Unresolved external modes are handed to RCB"]
+  - ["SRIP-22|constrains|SRIP-17", confirmed, high, "GRC bounds MAE legitimacy and capture"]
+  - ["SRIP-22|governs|SRIP-20", confirmed, high, "GRC evaluates legitimacy of ANS authority"]
+  - ["SRIP-22|governs|SRIP-23", confirmed, high, "DGL candidates require governance for canonical promotion"]
+  - ["SRIP-22|constrains|SRIP-24", confirmed, high, "Environment effects remain inside governance authority"]
+  - ["SRIP-22|constrains|SRIP-25", confirmed, high, "Interaction events do not create effect authority"]
+  - ["SRIP-26|feeds|SRIP-20", inferred, medium, "MIL influence evidence may create ANS pressure; exact handoff is not normative"]
+  - ["SRIP-27|provides_evidence_to|SRIP-28", confirmed, high, "TMC measures; TAL admits"]
+  - ["SRIP-28|governs|SRIP-23", confirmed, high, "Generated candidates remain candidates until TAL admission"]
+  - ["SRIP-28|feeds|SRIP-26", confirmed, high, "Only selected admitted lineage may acquire downstream memory influence"]
+
+tuple_fields: [edge_key, review_status, confidence, evidence]
