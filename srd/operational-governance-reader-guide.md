@@ -23,6 +23,8 @@ dateCreated: 2026-09-22T00:00:00.000Z
 
 ## Purpose
 
+This guide describes the public SRS/SRIP architecture. It does not imply that every described mechanism is implemented, enabled, or verified in a particular Sigma Runtime release.
+
 The Sigma Runtime Standard describes a bounded runtime architecture for long-horizon interaction, continuity, memory, drift management, recovery, external interaction, and evidence-bearing control.
 
 This guide provides a governance-facing reading of those concepts for stakeholders who may not work directly with the underlying cognitive or runtime architecture, including:
@@ -293,7 +295,11 @@ Official certification or badge use does.
 
 ### SRS-Partial / SRS-Minimum / SRS-Full
 
-These represent increasingly specific evidence-backed conformance claims tied to a declared version and scope.
+These are distinct evidence-backed conformance claims tied to a declared version and scope:
+
+- **SRS-Partial:** the implementation satisfies a documented subset of public SRS/SRIP normative requirements and identifies unsupported or incomplete areas.
+- **SRS-Minimum:** the implementation satisfies the minimum required public SRS/SRIP requirements for the declared scope and version.
+- **SRS-Full:** the implementation claims complete coverage of applicable public SRS/SRIP normative requirements for the specified version and scope.
 
 Governance interpretation:
 
